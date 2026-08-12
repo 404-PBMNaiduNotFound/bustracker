@@ -421,6 +421,13 @@ export function App() {
             hasUserConfirmed={hasUserConfirmed}
             onConfirmBus={handleConfirmBus}
             allStops={stops}
+            activeRouteStops={
+              selectedRouteObj?.stops
+                ? selectedRouteObj.stops
+                    .map((st) => stops.find((s) => s.id === st.stopId))
+                    .filter((s): s is Stop => s !== undefined)
+                : stops
+            }
             userLat={userLat}
             userLng={userLng}
             isUserOnboard={isUserOnboard}

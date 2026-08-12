@@ -19,6 +19,7 @@ interface LiveRouteTabProps {
   hasUserConfirmed: boolean;
   onConfirmBus: () => void;
   allStops: Stop[];
+  activeRouteStops: Stop[];
   userLat?: number | null;
   userLng?: number | null;
   isUserOnboard?: boolean;
@@ -35,36 +36,30 @@ export const LiveRouteTab: React.FC<LiveRouteTabProps> = ({
   hasUserConfirmed,
   onConfirmBus,
   allStops,
+  activeRouteStops,
   userLat,
   userLng,
   isUserOnboard = false,
 }) => {
-  // Sequence of stops along Corridor
-  const routeStopsTimeline = [
-    { id: "stop_simhachalam", name: "Simhachalam", distance: "0 km" },
-    { id: "stop_nad", name: "NAD Junction", distance: "6.2 km" },
-    { id: "stop_gajuwaka", name: "Old Gajuwaka", distance: "14.5 km" },
-    { id: "stop_kurmannapalem", name: "Kurmannapalem", distance: "19.8 km" },
-    { id: "stop_duvvada", name: "Duvvada Railway Station", distance: "24.1 km" },
-    { id: "stop_college", name: "Duvvada / Kompallaju College", distance: "26.3 km" },
-  ];
+  // Use the exact active route stops sequence (e.g. 311 for Scindia, 111 for Tagarapuvalasa, 55Y for Simhachalam)
+  const displayStops = activeRouteStops.length > 0 ? activeRouteStops : allStops.slice(0, 6);
 
   const currentStopIndex = Math.max(
     0,
-    routeStopsTimeline.findIndex((s) => s.id === currentStopId)
+    displayStops.findIndex((s) => s.id === currentStopId)
   );
 
-  const matchedStop = allStops.find((s) => s.id === currentStopId) || {
+  const matchedStop = displayStops.find((s) => s.id === currentStopId) || displayStops[0] || {
     lat: 17.6745,
     lng: 83.185,
     name: currentStopName,
   };
 
-  const nextStopObj = allStops[currentStopIndex + 1] || allStops[currentStopIndex];
+  const nextStopObj = displayStops[currentStopIndex + 1] || displayStops[currentStopIndex];
 
   // Dynamic Distance to Next Stop Calculation
   const distanceToNextKm =
-    matchedStop && nextStopObj
+    matchedStop && nextStopObj && matchedStop !== nextStopObj
       ? calculateDistanceKm(
           matchedStop.lat,
           matchedStop.lng,
@@ -73,7 +68,20 @@ export const LiveRouteTab: React.FC<LiveRouteTabProps> = ({
         ).toFixed(1)
       : "1.8";
 
-  // Dynamic Velocity Engine based on corridor segment progress
+  // Calculate cumulative distance along active route stops timeline
+  let runningDistance = 0;
+  const routeStopsTimeline = displayStops.map((stop, index) => {
+    if (index > 0) {
+      const prev = displayStops[index - 1];
+      runningDistance += calculateDistanceKm(prev.lat, prev.lng, stop.lat, stop.lng);
+    }
+    return {
+      id: stop.id,
+      name: stop.name,
+      distance: `${runningDistance.toFixed(1)} km`,
+    };
+  });
+
   const dynamicSpeedKmH = Math.round(
     28 + Math.sin(currentStopIndex * 1.5) * 8 + (activeStudentCount % 5)
   );
@@ -86,10 +94,10 @@ export const LiveRouteTab: React.FC<LiveRouteTabProps> = ({
         <div className="flex flex-wrap items-center justify-between gap-2 z-10 relative">
           <div className="flex items-center gap-2">
             <span className="px-2.5 py-1 rounded-full bg-indigo-600 text-white font-black text-xs">
-              BUS {activeBusNumber} LEAFLET MAP
+              BUS {activeBusNumber} ROUTE MAP
             </span>
             <span className="text-xs text-slate-300 font-semibold truncate">
-              Live Student Radar
+              Original Corridor Trajectory
             </span>
           </div>
           <span className="text-[10px] text-emerald-400 font-semibold bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 flex items-center gap-1 shrink-0">
@@ -104,7 +112,8 @@ export const LiveRouteTab: React.FC<LiveRouteTabProps> = ({
           currentStopLng={matchedStop.lng}
           currentStopName={currentStopName}
           activeStudentCount={activeStudentCount}
-          stops={allStops}
+          activeRouteStops={displayStops}
+          activeBusNumber={activeBusNumber}
           userLat={userLat}
           userLng={userLng}
           isUserOnboard={isUserOnboard}
@@ -131,7 +140,7 @@ export const LiveRouteTab: React.FC<LiveRouteTabProps> = ({
       <div className="glass-card rounded-3xl p-4 sm:p-5 border border-slate-800 space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-300">
-            Bus {activeBusNumber} Stop Timeline
+            Bus {activeBusNumber} Original Stop Sequence ({displayStops.length} Stops)
           </h3>
           <span className="text-[10px] text-slate-400">
             Last update: {lastUpdatedSecondsAgo}s ago
