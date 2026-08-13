@@ -1,0 +1,295 @@
+{
+  "trips": [
+    {
+      "routeId": "38Y",
+      "tripNumber": 1,
+      "stops": [
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "06:00 AM", "timeInMinutes": 360 },
+        { "stopId": "gurudwar", "stopName": "Gurudwara", "departureTime": "06:10 AM", "timeInMinutes": 370 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "06:18 AM", "timeInMinutes": 378 },
+        { "stopId": "airport", "stopName": "Airport", "departureTime": "06:28 AM", "timeInMinutes": 388 },
+        { "stopId": "bhpv", "stopName": "BHPV", "departureTime": "06:36 AM", "timeInMinutes": 396 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "06:48 AM", "timeInMinutes": 408 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "06:58 AM", "timeInMinutes": 418 },
+        { "stopId": "duvvada", "stopName": "Duvvada Railway Station", "departureTime": "07:10 AM", "timeInMinutes": 430 }
+      ]
+    },
+    {
+      "routeId": "38Y",
+      "tripNumber": 3,
+      "stops": [
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "08:50 AM", "timeInMinutes": 530 },
+        { "stopId": "gurudwar", "stopName": "Gurudwara", "departureTime": "09:00 AM", "timeInMinutes": 540 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "09:08 AM", "timeInMinutes": 548 },
+        { "stopId": "airport", "stopName": "Airport", "departureTime": "09:18 AM", "timeInMinutes": 558 },
+        { "stopId": "bhpv", "stopName": "BHPV", "departureTime": "09:26 AM", "timeInMinutes": 566 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "09:38 AM", "timeInMinutes": 578 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "09:48 AM", "timeInMinutes": 588 },
+        { "stopId": "duvvada", "stopName": "Duvvada Railway Station", "departureTime": "10:00 AM", "timeInMinutes": 600 }
+      ]
+    },
+    {
+      "routeId": "38Y",
+      "tripNumber": 5,
+      "stops": [
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "11:40 AM", "timeInMinutes": 700 },
+        { "stopId": "gurudwar", "stopName": "Gurudwara", "departureTime": "11:50 AM", "timeInMinutes": 710 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "11:58 AM", "timeInMinutes": 718 },
+        { "stopId": "airport", "stopName": "Airport", "departureTime": "12:08 PM", "timeInMinutes": 728 },
+        { "stopId": "bhpv", "stopName": "BHPV", "departureTime": "12:16 PM", "timeInMinutes": 736 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "12:28 PM", "timeInMinutes": 748 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "12:38 PM", "timeInMinutes": 758 },
+        { "stopId": "duvvada", "stopName": "Duvvada Railway Station", "departureTime": "12:50 PM", "timeInMinutes": 770 }
+      ]
+    },
+    {
+      "routeId": "400K",
+      "tripNumber": 1,
+      "stops": [
+        { "stopId": "maddilapalem", "stopName": "Maddilapalem", "departureTime": "06:00 AM", "timeInMinutes": 360 },
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "06:12 AM", "timeInMinutes": 372 },
+        { "stopId": "railway_station", "stopName": "Railway Station", "departureTime": "06:20 AM", "timeInMinutes": 380 },
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "06:32 AM", "timeInMinutes": 392 },
+        { "stopId": "malkapuram", "stopName": "Malkapuram", "departureTime": "06:42 AM", "timeInMinutes": 402 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "06:55 AM", "timeInMinutes": 415 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "07:07 AM", "timeInMinutes": 427 },
+        { "stopId": "duvvada", "stopName": "Duvvada Railway Station", "departureTime": "07:20 AM", "timeInMinutes": 440 }
+      ]
+    },
+    {
+      "routeId": "400K",
+      "tripNumber": 3,
+      "stops": [
+        { "stopId": "maddilapalem", "stopName": "Maddilapalem", "departureTime": "09:00 AM", "timeInMinutes": 540 },
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "09:12 AM", "timeInMinutes": 552 },
+        { "stopId": "railway_station", "stopName": "Railway Station", "departureTime": "09:20 AM", "timeInMinutes": 560 },
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "09:32 AM", "timeInMinutes": 572 },
+        { "stopId": "malkapuram", "stopName": "Malkapuram", "departureTime": "09:42 AM", "timeInMinutes": 582 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "09:55 AM", "timeInMinutes": 595 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "10:07 AM", "timeInMinutes": 607 },
+        { "stopId": "duvvada", "stopName": "Duvvada Railway Station", "departureTime": "10:20 AM", "timeInMinutes": 620 }
+      ]
+    },
+    {
+      "routeId": "400K",
+      "tripNumber": 5,
+      "stops": [
+        { "stopId": "maddilapalem", "stopName": "Maddilapalem", "departureTime": "12:00 PM", "timeInMinutes": 720 },
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "12:12 PM", "timeInMinutes": 732 },
+        { "stopId": "railway_station", "stopName": "Railway Station", "departureTime": "12:20 PM", "timeInMinutes": 740 },
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "12:32 PM", "timeInMinutes": 752 },
+        { "stopId": "malkapuram", "stopName": "Malkapuram", "departureTime": "12:42 PM", "timeInMinutes": 762 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "12:55 PM", "timeInMinutes": 775 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "01:07 PM", "timeInMinutes": 787 },
+        { "stopId": "duvvada", "stopName": "Duvvada Railway Station", "departureTime": "01:20 PM", "timeInMinutes": 800 }
+      ]
+    },
+    {
+      "routeId": "38M",
+      "tripNumber": 1,
+      "stops": [
+        { "stopId": "marikavalasa", "stopName": "Marikavalasa", "departureTime": "06:00 AM", "timeInMinutes": 360 },
+        { "stopId": "madhurawada", "stopName": "Madhurawada", "departureTime": "06:10 AM", "timeInMinutes": 370 },
+        { "stopId": "maddilapalem", "stopName": "Maddilapalem", "departureTime": "06:25 AM", "timeInMinutes": 385 },
+        { "stopId": "gurudwar", "stopName": "Gurudwara", "departureTime": "06:40 AM", "timeInMinutes": 400 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "06:48 AM", "timeInMinutes": 408 },
+        { "stopId": "bhpv", "stopName": "BHPV", "departureTime": "07:00 AM", "timeInMinutes": 420 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "07:12 AM", "timeInMinutes": 432 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "07:22 AM", "timeInMinutes": 442 }
+      ]
+    },
+    {
+      "routeId": "38M",
+      "tripNumber": 3,
+      "stops": [
+        { "stopId": "marikavalasa", "stopName": "Marikavalasa", "departureTime": "09:12 AM", "timeInMinutes": 552 },
+        { "stopId": "madhurawada", "stopName": "Madhurawada", "departureTime": "09:22 AM", "timeInMinutes": 562 },
+        { "stopId": "maddilapalem", "stopName": "Maddilapalem", "departureTime": "09:37 AM", "timeInMinutes": 577 },
+        { "stopId": "gurudwar", "stopName": "Gurudwara", "departureTime": "09:52 AM", "timeInMinutes": 592 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "10:00 AM", "timeInMinutes": 600 },
+        { "stopId": "bhpv", "stopName": "BHPV", "departureTime": "10:12 AM", "timeInMinutes": 612 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "10:24 AM", "timeInMinutes": 624 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "10:34 AM", "timeInMinutes": 634 }
+      ]
+    },
+    {
+      "routeId": "38M",
+      "tripNumber": 5,
+      "stops": [
+        { "stopId": "marikavalasa", "stopName": "Marikavalasa", "departureTime": "12:24 PM", "timeInMinutes": 744 },
+        { "stopId": "madhurawada", "stopName": "Madhurawada", "departureTime": "12:34 PM", "timeInMinutes": 754 },
+        { "stopId": "maddilapalem", "stopName": "Maddilapalem", "departureTime": "12:49 PM", "timeInMinutes": 769 },
+        { "stopId": "gurudwar", "stopName": "Gurudwara", "departureTime": "01:04 PM", "timeInMinutes": 784 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "01:12 PM", "timeInMinutes": 792 },
+        { "stopId": "bhpv", "stopName": "BHPV", "departureTime": "01:24 PM", "timeInMinutes": 804 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "01:36 PM", "timeInMinutes": 816 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "01:46 PM", "timeInMinutes": 826 }
+      ]
+    },
+    {
+      "routeId": "400",
+      "tripNumber": 1,
+      "stops": [
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "06:00 AM", "timeInMinutes": 360 },
+        { "stopId": "railway_station", "stopName": "Railway Station", "departureTime": "06:08 AM", "timeInMinutes": 368 },
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "06:18 AM", "timeInMinutes": 378 },
+        { "stopId": "malkapuram", "stopName": "Malkapuram", "departureTime": "06:25 AM", "timeInMinutes": 385 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "06:38 AM", "timeInMinutes": 398 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "06:50 AM", "timeInMinutes": 410 }
+      ]
+    },
+    {
+      "routeId": "400",
+      "tripNumber": 3,
+      "stops": [
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "08:50 AM", "timeInMinutes": 530 },
+        { "stopId": "railway_station", "stopName": "Railway Station", "departureTime": "08:58 AM", "timeInMinutes": 538 },
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "09:08 AM", "timeInMinutes": 548 },
+        { "stopId": "malkapuram", "stopName": "Malkapuram", "departureTime": "09:15 AM", "timeInMinutes": 555 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "09:28 AM", "timeInMinutes": 568 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "09:40 AM", "timeInMinutes": 580 }
+      ]
+    },
+    {
+      "routeId": "400",
+      "tripNumber": 5,
+      "stops": [
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "11:40 AM", "timeInMinutes": 700 },
+        { "stopId": "railway_station", "stopName": "Railway Station", "departureTime": "11:48 AM", "timeInMinutes": 708 },
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "11:58 AM", "timeInMinutes": 718 },
+        { "stopId": "malkapuram", "stopName": "Malkapuram", "departureTime": "12:05 PM", "timeInMinutes": 725 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "12:18 PM", "timeInMinutes": 738 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "12:30 PM", "timeInMinutes": 750 }
+      ]
+    },
+    {
+      "routeId": "400Y",
+      "tripNumber": 1,
+      "stops": [
+        { "stopId": "maddilapalem", "stopName": "Maddilapalem", "departureTime": "06:00 AM", "timeInMinutes": 360 },
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "06:12 AM", "timeInMinutes": 372 },
+        { "stopId": "railway_station", "stopName": "Railway Station", "departureTime": "06:22 AM", "timeInMinutes": 382 },
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "06:35 AM", "timeInMinutes": 395 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "06:48 AM", "timeInMinutes": 408 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "07:02 AM", "timeInMinutes": 422 },
+        { "stopId": "steel_plant", "stopName": "Steel Plant", "departureTime": "07:20 AM", "timeInMinutes": 440 },
+        { "stopId": "parawada", "stopName": "Parawada", "departureTime": "07:40 AM", "timeInMinutes": 460 },
+        { "stopId": "achutapuram", "stopName": "Achutapuram", "departureTime": "08:00 AM", "timeInMinutes": 480 },
+        { "stopId": "yelamanchili", "stopName": "Yelamanchili", "departureTime": "08:35 AM", "timeInMinutes": 515 }
+      ]
+    },
+    {
+      "routeId": "400Y",
+      "tripNumber": 3,
+      "stops": [
+        { "stopId": "maddilapalem", "stopName": "Maddilapalem", "departureTime": "08:50 AM", "timeInMinutes": 530 },
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "09:02 AM", "timeInMinutes": 542 },
+        { "stopId": "railway_station", "stopName": "Railway Station", "departureTime": "09:12 AM", "timeInMinutes": 552 },
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "09:25 AM", "timeInMinutes": 565 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "09:38 AM", "timeInMinutes": 578 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "09:52 AM", "timeInMinutes": 592 },
+        { "stopId": "steel_plant", "stopName": "Steel Plant", "departureTime": "10:10 AM", "timeInMinutes": 610 },
+        { "stopId": "parawada", "stopName": "Parawada", "departureTime": "10:30 AM", "timeInMinutes": 630 },
+        { "stopId": "achutapuram", "stopName": "Achutapuram", "departureTime": "10:50 AM", "timeInMinutes": 650 },
+        { "stopId": "yelamanchili", "stopName": "Yelamanchili", "departureTime": "11:25 AM", "timeInMinutes": 685 }
+      ]
+    },
+    {
+      "routeId": "400Y",
+      "tripNumber": 5,
+      "stops": [
+        { "stopId": "maddilapalem", "stopName": "Maddilapalem", "departureTime": "11:40 AM", "timeInMinutes": 700 },
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "11:52 AM", "timeInMinutes": 712 },
+        { "stopId": "railway_station", "stopName": "Railway Station", "departureTime": "12:02 PM", "timeInMinutes": 722 },
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "12:15 PM", "timeInMinutes": 735 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "12:28 PM", "timeInMinutes": 748 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "12:42 PM", "timeInMinutes": 762 },
+        { "stopId": "steel_plant", "stopName": "Steel Plant", "departureTime": "01:00 PM", "timeInMinutes": 780 },
+        { "stopId": "parawada", "stopName": "Parawada", "departureTime": "01:20 PM", "timeInMinutes": 800 },
+        { "stopId": "achutapuram", "stopName": "Achutapuram", "departureTime": "01:40 PM", "timeInMinutes": 820 },
+        { "stopId": "yelamanchili", "stopName": "Yelamanchili", "departureTime": "02:15 PM", "timeInMinutes": 855 }
+      ]
+    },
+    {
+      "routeId": "500",
+      "tripNumber": 1,
+      "stops": [
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "06:00 AM", "timeInMinutes": 360 },
+        { "stopId": "gurudwar", "stopName": "Gurudwara", "departureTime": "06:08 AM", "timeInMinutes": 368 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "06:15 AM", "timeInMinutes": 375 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "06:28 AM", "timeInMinutes": 388 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "06:38 AM", "timeInMinutes": 398 },
+        { "stopId": "aganampudi", "stopName": "Aganampudi", "departureTime": "06:48 AM", "timeInMinutes": 408 },
+        { "stopId": "anakapalle", "stopName": "Anakapalle", "departureTime": "07:05 AM", "timeInMinutes": 425 }
+      ]
+    },
+    {
+      "routeId": "500",
+      "tripNumber": 3,
+      "stops": [
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "08:50 AM", "timeInMinutes": 530 },
+        { "stopId": "gurudwar", "stopName": "Gurudwara", "departureTime": "08:58 AM", "timeInMinutes": 538 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "09:05 AM", "timeInMinutes": 545 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "09:18 AM", "timeInMinutes": 558 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "09:28 AM", "timeInMinutes": 568 },
+        { "stopId": "aganampudi", "stopName": "Aganampudi", "departureTime": "09:38 AM", "timeInMinutes": 578 },
+        { "stopId": "anakapalle", "stopName": "Anakapalle", "departureTime": "09:55 AM", "timeInMinutes": 595 }
+      ]
+    },
+    {
+      "routeId": "500",
+      "tripNumber": 5,
+      "stops": [
+        { "stopId": "rtc", "stopName": "RTC Complex", "departureTime": "11:40 AM", "timeInMinutes": 700 },
+        { "stopId": "gurudwar", "stopName": "Gurudwara", "departureTime": "11:48 AM", "timeInMinutes": 708 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "11:55 AM", "timeInMinutes": 715 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "12:08 PM", "timeInMinutes": 728 },
+        { "stopId": "kurmannapalem", "stopName": "Kurmannapalem", "departureTime": "12:18 PM", "timeInMinutes": 738 },
+        { "stopId": "aganampudi", "stopName": "Aganampudi", "departureTime": "12:28 PM", "timeInMinutes": 748 },
+        { "stopId": "anakapalle", "stopName": "Anakapalle", "departureTime": "12:45 PM", "timeInMinutes": 765 }
+      ]
+    },
+    {
+      "routeId": "55",
+      "tripNumber": 1,
+      "stops": [
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "06:00 AM", "timeInMinutes": 360 },
+        { "stopId": "malkapuram", "stopName": "Malkapuram", "departureTime": "06:10 AM", "timeInMinutes": 370 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "06:22 AM", "timeInMinutes": 382 },
+        { "stopId": "bhpv", "stopName": "BHPV", "departureTime": "06:35 AM", "timeInMinutes": 395 },
+        { "stopId": "airport", "stopName": "Airport", "departureTime": "06:45 AM", "timeInMinutes": 405 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "06:55 AM", "timeInMinutes": 415 },
+        { "stopId": "gopalapatnam", "stopName": "Gopalapatnam", "departureTime": "07:05 AM", "timeInMinutes": 425 },
+        { "stopId": "simhachalam", "stopName": "Simhachalam", "departureTime": "07:18 AM", "timeInMinutes": 438 }
+      ]
+    },
+    {
+      "routeId": "55",
+      "tripNumber": 3,
+      "stops": [
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "09:20 AM", "timeInMinutes": 560 },
+        { "stopId": "malkapuram", "stopName": "Malkapuram", "departureTime": "09:30 AM", "timeInMinutes": 570 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "09:42 AM", "timeInMinutes": 582 },
+        { "stopId": "bhpv", "stopName": "BHPV", "departureTime": "09:55 AM", "timeInMinutes": 595 },
+        { "stopId": "airport", "stopName": "Airport", "departureTime": "10:05 AM", "timeInMinutes": 605 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "10:15 AM", "timeInMinutes": 615 },
+        { "stopId": "gopalapatnam", "stopName": "Gopalapatnam", "departureTime": "10:25 AM", "timeInMinutes": 625 },
+        { "stopId": "simhachalam", "stopName": "Simhachalam", "departureTime": "10:38 AM", "timeInMinutes": 638 }
+      ]
+    },
+    {
+      "routeId": "55",
+      "tripNumber": 5,
+      "stops": [
+        { "stopId": "scindia", "stopName": "Scindia", "departureTime": "12:40 PM", "timeInMinutes": 760 },
+        { "stopId": "malkapuram", "stopName": "Malkapuram", "departureTime": "12:50 PM", "timeInMinutes": 770 },
+        { "stopId": "gajuwaka", "stopName": "Gajuwaka", "departureTime": "01:02 PM", "timeInMinutes": 782 },
+        { "stopId": "bhpv", "stopName": "BHPV", "departureTime": "01:15 PM", "timeInMinutes": 795 },
+        { "stopId": "airport", "stopName": "Airport", "departureTime": "01:25 PM", "timeInMinutes": 805 },
+        { "stopId": "nad", "stopName": "NAD Junction", "departureTime": "01:35 PM", "timeInMinutes": 815 },
+        { "stopId": "gopalapatnam", "stopName": "Gopalapatnam", "departureTime": "01:45 PM", "timeInMinutes": 825 },
+        { "stopId": "simhachalam", "stopName": "Simhachalam", "departureTime": "01:58 PM", "timeInMinutes": 838 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6855 @@
+{
+  "stops": [
+    {
+      "id": "rtc",
+      "name": "RTC",
+      "lat": 17.72368,
+      "lng": 83.3081,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "gurudwar",
+      "name": "Gurudwar",
+      "lat": 17.73652,
+      "lng": 83.30771,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "nad",
+      "name": "NAD",
+      "lat": 17.7391,
+      "lng": 83.2372,
+      "isTransferPoint": true,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "airport",
+      "name": "Airport",
+      "lat": 17.7215,
+      "lng": 83.2245,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "bhpv",
+      "name": "BHPV",
+      "lat": 17.712,
+      "lng": 83.228,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "gajuwaka",
+      "name": "Gajuwaka",
+      "lat": 17.69029,
+      "lng": 83.22383,
+      "isTransferPoint": true,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "kurmannapalem",
+      "name": "Kurmannapalem",
+      "lat": 17.6856,
+      "lng": 83.16855,
+      "isTransferPoint": true,
+      "isDuvvadaPoint": true
+    },
+    {
+      "id": "duvvada",
+      "name": "Duvvada",
+      "lat": 17.7039,
+      "lng": 83.15178,
+      "isTransferPoint": true,
+      "isDuvvadaPoint": true
+    },
+    {
+      "id": "maddilapalem",
+      "name": "Maddilapalem",
+      "lat": 17.73623,
+      "lng": 83.32041,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "railway_stn",
+      "name": "Railway Stn",
+      "lat": 17.72,
+      "lng": 83.29,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "scindia",
+      "name": "Scindia",
+      "lat": 17.6842,
+      "lng": 83.2798,
+      "isTransferPoint": true,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "malkapuram",
+      "name": "Malkapuram",
+      "lat": 17.695,
+      "lng": 83.25,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "marikavalasa",
+      "name": "Marikavalasa",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "madhurawada",
+      "name": "Madhurawada",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "sector_11",
+      "name": "Sector 11",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "parawada",
+      "name": "Parawada",
+      "lat": 17.61,
+      "lng": 83.12,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "ntpc",
+      "name": "NTPC",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "vadacheepurupalli",
+      "name": "Vadacheepurupalli",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "narava",
+      "name": "Narava",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "steel_plant",
+      "name": "Steel Plant",
+      "lat": 17.645,
+      "lng": 83.17,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "achutapuram",
+      "name": "Achutapuram",
+      "lat": 17.57,
+      "lng": 83.02,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "yelamanchili",
+      "name": "Yelamanchili",
+      "lat": 17.55,
+      "lng": 82.86,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "aganampudi",
+      "name": "Aganampudi",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "anakapalle",
+      "name": "Anakapalle",
+      "lat": 17.69,
+      "lng": 83.0,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "convent",
+      "name": "Convent",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "carshed",
+      "name": "Carshed",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "pm_palem",
+      "name": "PM Palem",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "lankelapalem",
+      "name": "Lankelapalem",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "simhachalam",
+      "name": "Simhachalam",
+      "lat": 17.7663,
+      "lng": 83.2421,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "collector_office",
+      "name": "Collector Office",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "jagadamba",
+      "name": "Jagadamba",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "town_kotharoad",
+      "name": "Town Kotharoad",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "dosuru",
+      "name": "Dosuru",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "kollivanipalem",
+      "name": "Kollivanipalem",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    },
+    {
+      "id": "chodavaram",
+      "name": "Chodavaram",
+      "lat": 17.7,
+      "lng": 83.2,
+      "isTransferPoint": false,
+      "isDuvvadaPoint": false
+    }
+  ],
+  "routes": [
+    {
+      "id": "38M",
+      "name": "38M",
+      "type": "feeder",
+      "origin": "Marikavalasa",
+      "destination": "Kurmannapalem",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "38M"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "38Y",
+      "name": "38Y",
+      "type": "direct",
+      "origin": "RTC",
+      "destination": "Duvvada",
+      "isDirectToDuvvada": true,
+      "busNumbers": [
+        "38Y"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "400",
+      "name": "400",
+      "type": "feeder",
+      "origin": "RTC",
+      "destination": "Kurmannapalem",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "400"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "400K",
+      "name": "400K",
+      "type": "direct",
+      "origin": "Maddilapalem",
+      "destination": "Duvvada",
+      "isDirectToDuvvada": true,
+      "busNumbers": [
+        "400K"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "400N",
+      "name": "400N",
+      "type": "feeder",
+      "origin": "RTC",
+      "destination": "Vadacheepurupalli",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "400N"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "400S",
+      "name": "400S",
+      "type": "feeder",
+      "origin": "Maddilapalem",
+      "destination": "Narava",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "400S"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "400Y",
+      "name": "400Y",
+      "type": "feeder",
+      "origin": "Maddilapalem",
+      "destination": "Yelamanchili",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "400Y"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "500",
+      "name": "500",
+      "type": "feeder",
+      "origin": "RTC",
+      "destination": "Anakapalle",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "500"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "500A/C",
+      "name": "500A/C",
+      "type": "feeder",
+      "origin": "RTC",
+      "destination": "Achutapuram",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "500A/C"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "500P",
+      "name": "500P",
+      "type": "feeder",
+      "origin": "Anakapalle",
+      "destination": "PM Palem",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "500P"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "500Y",
+      "name": "500Y",
+      "type": "feeder",
+      "origin": "RTC",
+      "destination": "Yelamanchili",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "500Y"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "600",
+      "name": "600",
+      "type": "feeder",
+      "origin": "Anakapalle",
+      "destination": "Simhachalam",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "600"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "600C",
+      "name": "600C",
+      "type": "feeder",
+      "origin": "RTC",
+      "destination": "Anakapalle",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "600C"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "744",
+      "name": "744",
+      "type": "feeder",
+      "origin": "Collector Office",
+      "destination": "Dosuru",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "744"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "844",
+      "name": "844",
+      "type": "feeder",
+      "origin": "Collector Office",
+      "destination": "Kollivanipalem",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "844"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "99A/C",
+      "name": "99A/C",
+      "type": "feeder",
+      "origin": "Collector Office",
+      "destination": "Chodavaram",
+      "isDirectToDuvvada": false,
+      "busNumbers": [
+        "99A/C"
+      ],
+      "isActive": true
+    }
+  ],
+  "routeStops": [
+    {
+      "id": "38M_marikavalasa_1",
+      "routeId": "38M",
+      "stopId": "marikavalasa",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "38M_madhurawada_2",
+      "routeId": "38M",
+      "stopId": "madhurawada",
+      "sequence": 2,
+      "referenceTime": "06:06"
+    },
+    {
+      "id": "38M_maddilapalem_3",
+      "routeId": "38M",
+      "stopId": "maddilapalem",
+      "sequence": 3,
+      "referenceTime": "06:15"
+    },
+    {
+      "id": "38M_gurudwar_4",
+      "routeId": "38M",
+      "stopId": "gurudwar",
+      "sequence": 4,
+      "referenceTime": "06:24"
+    },
+    {
+      "id": "38M_nad_5",
+      "routeId": "38M",
+      "stopId": "nad",
+      "sequence": 5,
+      "referenceTime": "06:29"
+    },
+    {
+      "id": "38M_bhpv_6",
+      "routeId": "38M",
+      "stopId": "bhpv",
+      "sequence": 6,
+      "referenceTime": "07:00"
+    },
+    {
+      "id": "38M_gajuwaka_7",
+      "routeId": "38M",
+      "stopId": "gajuwaka",
+      "sequence": 7,
+      "referenceTime": "07:07"
+    },
+    {
+      "id": "38M_kurmannapalem_8",
+      "routeId": "38M",
+      "stopId": "kurmannapalem",
+      "sequence": 8,
+      "referenceTime": "07:13"
+    },
+    {
+      "id": "38Y_rtc_1",
+      "routeId": "38Y",
+      "stopId": "rtc",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "38Y_gurudwar_2",
+      "routeId": "38Y",
+      "stopId": "gurudwar",
+      "sequence": 2,
+      "referenceTime": "06:06"
+    },
+    {
+      "id": "38Y_nad_3",
+      "routeId": "38Y",
+      "stopId": "nad",
+      "sequence": 3,
+      "referenceTime": "06:11"
+    },
+    {
+      "id": "38Y_airport_4",
+      "routeId": "38Y",
+      "stopId": "airport",
+      "sequence": 4,
+      "referenceTime": "06:17"
+    },
+    {
+      "id": "38Y_bhpv_5",
+      "routeId": "38Y",
+      "stopId": "bhpv",
+      "sequence": 5,
+      "referenceTime": "06:22"
+    },
+    {
+      "id": "38Y_gajuwaka_6",
+      "routeId": "38Y",
+      "stopId": "gajuwaka",
+      "sequence": 6,
+      "referenceTime": "06:29"
+    },
+    {
+      "id": "38Y_kurmannapalem_7",
+      "routeId": "38Y",
+      "stopId": "kurmannapalem",
+      "sequence": 7,
+      "referenceTime": "06:35"
+    },
+    {
+      "id": "38Y_duvvada_8",
+      "routeId": "38Y",
+      "stopId": "duvvada",
+      "sequence": 8,
+      "referenceTime": "07:06"
+    },
+    {
+      "id": "400_rtc_1",
+      "routeId": "400",
+      "stopId": "rtc",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "400_railway_stn_2",
+      "routeId": "400",
+      "stopId": "railway_stn",
+      "sequence": 2,
+      "referenceTime": "06:05"
+    },
+    {
+      "id": "400_scindia_3",
+      "routeId": "400",
+      "stopId": "scindia",
+      "sequence": 3,
+      "referenceTime": "06:11"
+    },
+    {
+      "id": "400_malkapuram_4",
+      "routeId": "400",
+      "stopId": "malkapuram",
+      "sequence": 4,
+      "referenceTime": "06:15"
+    },
+    {
+      "id": "400_gajuwaka_5",
+      "routeId": "400",
+      "stopId": "gajuwaka",
+      "sequence": 5,
+      "referenceTime": "06:23"
+    },
+    {
+      "id": "400_kurmannapalem_6",
+      "routeId": "400",
+      "stopId": "kurmannapalem",
+      "sequence": 6,
+      "referenceTime": "06:30"
+    },
+    {
+      "id": "400K_maddilapalem_1",
+      "routeId": "400K",
+      "stopId": "maddilapalem",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "400K_rtc_2",
+      "routeId": "400K",
+      "stopId": "rtc",
+      "sequence": 2,
+      "referenceTime": "06:07"
+    },
+    {
+      "id": "400K_railway_stn_3",
+      "routeId": "400K",
+      "stopId": "railway_stn",
+      "sequence": 3,
+      "referenceTime": "06:12"
+    },
+    {
+      "id": "400K_scindia_4",
+      "routeId": "400K",
+      "stopId": "scindia",
+      "sequence": 4,
+      "referenceTime": "06:19"
+    },
+    {
+      "id": "400K_malkapuram_5",
+      "routeId": "400K",
+      "stopId": "malkapuram",
+      "sequence": 5,
+      "referenceTime": "06:25"
+    },
+    {
+      "id": "400K_gajuwaka_6",
+      "routeId": "400K",
+      "stopId": "gajuwaka",
+      "sequence": 6,
+      "referenceTime": "06:33"
+    },
+    {
+      "id": "400K_kurmannapalem_7",
+      "routeId": "400K",
+      "stopId": "kurmannapalem",
+      "sequence": 7,
+      "referenceTime": "07:04"
+    },
+    {
+      "id": "400K_duvvada_8",
+      "routeId": "400K",
+      "stopId": "duvvada",
+      "sequence": 8,
+      "referenceTime": "07:12"
+    },
+    {
+      "id": "400N_rtc_1",
+      "routeId": "400N",
+      "stopId": "rtc",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "400N_railway_stn_2",
+      "routeId": "400N",
+      "stopId": "railway_stn",
+      "sequence": 2,
+      "referenceTime": "06:05"
+    },
+    {
+      "id": "400N_scindia_3",
+      "routeId": "400N",
+      "stopId": "scindia",
+      "sequence": 3,
+      "referenceTime": "06:11"
+    },
+    {
+      "id": "400N_malkapuram_4",
+      "routeId": "400N",
+      "stopId": "malkapuram",
+      "sequence": 4,
+      "referenceTime": "06:16"
+    },
+    {
+      "id": "400N_gajuwaka_5",
+      "routeId": "400N",
+      "stopId": "gajuwaka",
+      "sequence": 5,
+      "referenceTime": "06:24"
+    },
+    {
+      "id": "400N_kurmannapalem_6",
+      "routeId": "400N",
+      "stopId": "kurmannapalem",
+      "sequence": 6,
+      "referenceTime": "06:31"
+    },
+    {
+      "id": "400N_sector_11_7",
+      "routeId": "400N",
+      "stopId": "sector_11",
+      "sequence": 7,
+      "referenceTime": "07:01"
+    },
+    {
+      "id": "400N_parawada_8",
+      "routeId": "400N",
+      "stopId": "parawada",
+      "sequence": 8,
+      "referenceTime": "07:09"
+    },
+    {
+      "id": "400N_ntpc_9",
+      "routeId": "400N",
+      "stopId": "ntpc",
+      "sequence": 9,
+      "referenceTime": "07:16"
+    },
+    {
+      "id": "400N_vadacheepurupalli_10",
+      "routeId": "400N",
+      "stopId": "vadacheepurupalli",
+      "sequence": 10,
+      "referenceTime": "07:25"
+    },
+    {
+      "id": "400S_maddilapalem_1",
+      "routeId": "400S",
+      "stopId": "maddilapalem",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "400S_rtc_2",
+      "routeId": "400S",
+      "stopId": "rtc",
+      "sequence": 2,
+      "referenceTime": "06:07"
+    },
+    {
+      "id": "400S_railway_stn_3",
+      "routeId": "400S",
+      "stopId": "railway_stn",
+      "sequence": 3,
+      "referenceTime": "06:12"
+    },
+    {
+      "id": "400S_scindia_4",
+      "routeId": "400S",
+      "stopId": "scindia",
+      "sequence": 4,
+      "referenceTime": "06:18"
+    },
+    {
+      "id": "400S_gajuwaka_5",
+      "routeId": "400S",
+      "stopId": "gajuwaka",
+      "sequence": 5,
+      "referenceTime": "06:26"
+    },
+    {
+      "id": "400S_kurmannapalem_6",
+      "routeId": "400S",
+      "stopId": "kurmannapalem",
+      "sequence": 6,
+      "referenceTime": "06:33"
+    },
+    {
+      "id": "400S_narava_7",
+      "routeId": "400S",
+      "stopId": "narava",
+      "sequence": 7,
+      "referenceTime": "07:06"
+    },
+    {
+      "id": "400Y_maddilapalem_1",
+      "routeId": "400Y",
+      "stopId": "maddilapalem",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "400Y_rtc_2",
+      "routeId": "400Y",
+      "stopId": "rtc",
+      "sequence": 2,
+      "referenceTime": "06:07"
+    },
+    {
+      "id": "400Y_railway_stn_3",
+      "routeId": "400Y",
+      "stopId": "railway_stn",
+      "sequence": 3,
+      "referenceTime": "06:13"
+    },
+    {
+      "id": "400Y_scindia_4",
+      "routeId": "400Y",
+      "stopId": "scindia",
+      "sequence": 4,
+      "referenceTime": "06:21"
+    },
+    {
+      "id": "400Y_gajuwaka_5",
+      "routeId": "400Y",
+      "stopId": "gajuwaka",
+      "sequence": 5,
+      "referenceTime": "06:29"
+    },
+    {
+      "id": "400Y_kurmannapalem_6",
+      "routeId": "400Y",
+      "stopId": "kurmannapalem",
+      "sequence": 6,
+      "referenceTime": "07:01"
+    },
+    {
+      "id": "400Y_steel_plant_7",
+      "routeId": "400Y",
+      "stopId": "steel_plant",
+      "sequence": 7,
+      "referenceTime": "07:12"
+    },
+    {
+      "id": "400Y_parawada_8",
+      "routeId": "400Y",
+      "stopId": "parawada",
+      "sequence": 8,
+      "referenceTime": "07:24"
+    },
+    {
+      "id": "400Y_achutapuram_9",
+      "routeId": "400Y",
+      "stopId": "achutapuram",
+      "sequence": 9,
+      "referenceTime": "08:00"
+    },
+    {
+      "id": "400Y_yelamanchili_10",
+      "routeId": "400Y",
+      "stopId": "yelamanchili",
+      "sequence": 10,
+      "referenceTime": "08:21"
+    },
+    {
+      "id": "500_rtc_1",
+      "routeId": "500",
+      "stopId": "rtc",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "500_gurudwar_2",
+      "routeId": "500",
+      "stopId": "gurudwar",
+      "sequence": 2,
+      "referenceTime": "06:05"
+    },
+    {
+      "id": "500_nad_3",
+      "routeId": "500",
+      "stopId": "nad",
+      "sequence": 3,
+      "referenceTime": "06:09"
+    },
+    {
+      "id": "500_gajuwaka_4",
+      "routeId": "500",
+      "stopId": "gajuwaka",
+      "sequence": 4,
+      "referenceTime": "06:17"
+    },
+    {
+      "id": "500_kurmannapalem_5",
+      "routeId": "500",
+      "stopId": "kurmannapalem",
+      "sequence": 5,
+      "referenceTime": "06:23"
+    },
+    {
+      "id": "500_aganampudi_6",
+      "routeId": "500",
+      "stopId": "aganampudi",
+      "sequence": 6,
+      "referenceTime": "06:29"
+    },
+    {
+      "id": "500_anakapalle_7",
+      "routeId": "500",
+      "stopId": "anakapalle",
+      "sequence": 7,
+      "referenceTime": "07:03"
+    },
+    {
+      "id": "500A/C_rtc_1",
+      "routeId": "500A/C",
+      "stopId": "rtc",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "500A/C_gurudwar_2",
+      "routeId": "500A/C",
+      "stopId": "gurudwar",
+      "sequence": 2,
+      "referenceTime": "06:05"
+    },
+    {
+      "id": "500A/C_nad_3",
+      "routeId": "500A/C",
+      "stopId": "nad",
+      "sequence": 3,
+      "referenceTime": "06:09"
+    },
+    {
+      "id": "500A/C_gajuwaka_4",
+      "routeId": "500A/C",
+      "stopId": "gajuwaka",
+      "sequence": 4,
+      "referenceTime": "06:17"
+    },
+    {
+      "id": "500A/C_kurmannapalem_5",
+      "routeId": "500A/C",
+      "stopId": "kurmannapalem",
+      "sequence": 5,
+      "referenceTime": "06:23"
+    },
+    {
+      "id": "500A/C_anakapalle_6",
+      "routeId": "500A/C",
+      "stopId": "anakapalle",
+      "sequence": 6,
+      "referenceTime": "06:35"
+    },
+    {
+      "id": "500A/C_achutapuram_7",
+      "routeId": "500A/C",
+      "stopId": "achutapuram",
+      "sequence": 7,
+      "referenceTime": "07:11"
+    },
+    {
+      "id": "500P_anakapalle_1",
+      "routeId": "500P",
+      "stopId": "anakapalle",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "500P_kurmannapalem_2",
+      "routeId": "500P",
+      "stopId": "kurmannapalem",
+      "sequence": 2,
+      "referenceTime": "06:12"
+    },
+    {
+      "id": "500P_gajuwaka_3",
+      "routeId": "500P",
+      "stopId": "gajuwaka",
+      "sequence": 3,
+      "referenceTime": "06:19"
+    },
+    {
+      "id": "500P_scindia_4",
+      "routeId": "500P",
+      "stopId": "scindia",
+      "sequence": 4,
+      "referenceTime": "06:27"
+    },
+    {
+      "id": "500P_convent_5",
+      "routeId": "500P",
+      "stopId": "convent",
+      "sequence": 5,
+      "referenceTime": "06:31"
+    },
+    {
+      "id": "500P_rtc_6",
+      "routeId": "500P",
+      "stopId": "rtc",
+      "sequence": 6,
+      "referenceTime": "07:00"
+    },
+    {
+      "id": "500P_maddilapalem_7",
+      "routeId": "500P",
+      "stopId": "maddilapalem",
+      "sequence": 7,
+      "referenceTime": "07:07"
+    },
+    {
+      "id": "500P_carshed_8",
+      "routeId": "500P",
+      "stopId": "carshed",
+      "sequence": 8,
+      "referenceTime": "07:12"
+    },
+    {
+      "id": "500P_pm_palem_9",
+      "routeId": "500P",
+      "stopId": "pm_palem",
+      "sequence": 9,
+      "referenceTime": "07:23"
+    },
+    {
+      "id": "500Y_rtc_1",
+      "routeId": "500Y",
+      "stopId": "rtc",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "500Y_gurudwar_2",
+      "routeId": "500Y",
+      "stopId": "gurudwar",
+      "sequence": 2,
+      "referenceTime": "06:05"
+    },
+    {
+      "id": "500Y_nad_3",
+      "routeId": "500Y",
+      "stopId": "nad",
+      "sequence": 3,
+      "referenceTime": "06:09"
+    },
+    {
+      "id": "500Y_gajuwaka_4",
+      "routeId": "500Y",
+      "stopId": "gajuwaka",
+      "sequence": 4,
+      "referenceTime": "06:17"
+    },
+    {
+      "id": "500Y_kurmannapalem_5",
+      "routeId": "500Y",
+      "stopId": "kurmannapalem",
+      "sequence": 5,
+      "referenceTime": "06:23"
+    },
+    {
+      "id": "500Y_anakapalle_6",
+      "routeId": "500Y",
+      "stopId": "anakapalle",
+      "sequence": 6,
+      "referenceTime": "06:35"
+    },
+    {
+      "id": "500Y_yelamanchili_7",
+      "routeId": "500Y",
+      "stopId": "yelamanchili",
+      "sequence": 7,
+      "referenceTime": "07:18"
+    },
+    {
+      "id": "600_anakapalle_1",
+      "routeId": "600",
+      "stopId": "anakapalle",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "600_lankelapalem_2",
+      "routeId": "600",
+      "stopId": "lankelapalem",
+      "sequence": 2,
+      "referenceTime": "06:07"
+    },
+    {
+      "id": "600_kurmannapalem_3",
+      "routeId": "600",
+      "stopId": "kurmannapalem",
+      "sequence": 3,
+      "referenceTime": "06:15"
+    },
+    {
+      "id": "600_gajuwaka_4",
+      "routeId": "600",
+      "stopId": "gajuwaka",
+      "sequence": 4,
+      "referenceTime": "06:22"
+    },
+    {
+      "id": "600_malkapuram_5",
+      "routeId": "600",
+      "stopId": "malkapuram",
+      "sequence": 5,
+      "referenceTime": "06:29"
+    },
+    {
+      "id": "600_scindia_6",
+      "routeId": "600",
+      "stopId": "scindia",
+      "sequence": 6,
+      "referenceTime": "06:35"
+    },
+    {
+      "id": "600_railway_stn_7",
+      "routeId": "600",
+      "stopId": "railway_stn",
+      "sequence": 7,
+      "referenceTime": "07:05"
+    },
+    {
+      "id": "600_rtc_8",
+      "routeId": "600",
+      "stopId": "rtc",
+      "sequence": 8,
+      "referenceTime": "07:11"
+    },
+    {
+      "id": "600_nad_9",
+      "routeId": "600",
+      "stopId": "nad",
+      "sequence": 9,
+      "referenceTime": "07:18"
+    },
+    {
+      "id": "600_simhachalam_10",
+      "routeId": "600",
+      "stopId": "simhachalam",
+      "sequence": 10,
+      "referenceTime": "07:33"
+    },
+    {
+      "id": "600C_rtc_1",
+      "routeId": "600C",
+      "stopId": "rtc",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "600C_railway_stn_2",
+      "routeId": "600C",
+      "stopId": "railway_stn",
+      "sequence": 2,
+      "referenceTime": "06:05"
+    },
+    {
+      "id": "600C_convent_3",
+      "routeId": "600C",
+      "stopId": "convent",
+      "sequence": 3,
+      "referenceTime": "06:09"
+    },
+    {
+      "id": "600C_gajuwaka_4",
+      "routeId": "600C",
+      "stopId": "gajuwaka",
+      "sequence": 4,
+      "referenceTime": "06:17"
+    },
+    {
+      "id": "600C_kurmannapalem_5",
+      "routeId": "600C",
+      "stopId": "kurmannapalem",
+      "sequence": 5,
+      "referenceTime": "06:23"
+    },
+    {
+      "id": "600C_aganampudi_6",
+      "routeId": "600C",
+      "stopId": "aganampudi",
+      "sequence": 6,
+      "referenceTime": "06:29"
+    },
+    {
+      "id": "600C_anakapalle_7",
+      "routeId": "600C",
+      "stopId": "anakapalle",
+      "sequence": 7,
+      "referenceTime": "07:03"
+    },
+    {
+      "id": "744_collector_office_1",
+      "routeId": "744",
+      "stopId": "collector_office",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "744_jagadamba_2",
+      "routeId": "744",
+      "stopId": "jagadamba",
+      "sequence": 2,
+      "referenceTime": "06:06"
+    },
+    {
+      "id": "744_town_kotharoad_3",
+      "routeId": "744",
+      "stopId": "town_kotharoad",
+      "sequence": 3,
+      "referenceTime": "06:13"
+    },
+    {
+      "id": "744_convent_4",
+      "routeId": "744",
+      "stopId": "convent",
+      "sequence": 4,
+      "referenceTime": "06:21"
+    },
+    {
+      "id": "744_scindia_5",
+      "routeId": "744",
+      "stopId": "scindia",
+      "sequence": 5,
+      "referenceTime": "06:29"
+    },
+    {
+      "id": "744_gajuwaka_6",
+      "routeId": "744",
+      "stopId": "gajuwaka",
+      "sequence": 6,
+      "referenceTime": "07:01"
+    },
+    {
+      "id": "744_kurmannapalem_7",
+      "routeId": "744",
+      "stopId": "kurmannapalem",
+      "sequence": 7,
+      "referenceTime": "07:09"
+    },
+    {
+      "id": "744_parawada_8",
+      "routeId": "744",
+      "stopId": "parawada",
+      "sequence": 8,
+      "referenceTime": "07:18"
+    },
+    {
+      "id": "744_dosuru_9",
+      "routeId": "744",
+      "stopId": "dosuru",
+      "sequence": 9,
+      "referenceTime": "07:33"
+    },
+    {
+      "id": "844_collector_office_1",
+      "routeId": "844",
+      "stopId": "collector_office",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "844_jagadamba_2",
+      "routeId": "844",
+      "stopId": "jagadamba",
+      "sequence": 2,
+      "referenceTime": "06:06"
+    },
+    {
+      "id": "844_town_kotharoad_3",
+      "routeId": "844",
+      "stopId": "town_kotharoad",
+      "sequence": 3,
+      "referenceTime": "06:13"
+    },
+    {
+      "id": "844_convent_4",
+      "routeId": "844",
+      "stopId": "convent",
+      "sequence": 4,
+      "referenceTime": "06:21"
+    },
+    {
+      "id": "844_scindia_5",
+      "routeId": "844",
+      "stopId": "scindia",
+      "sequence": 5,
+      "referenceTime": "06:29"
+    },
+    {
+      "id": "844_gajuwaka_6",
+      "routeId": "844",
+      "stopId": "gajuwaka",
+      "sequence": 6,
+      "referenceTime": "07:01"
+    },
+    {
+      "id": "844_kurmannapalem_7",
+      "routeId": "844",
+      "stopId": "kurmannapalem",
+      "sequence": 7,
+      "referenceTime": "07:09"
+    },
+    {
+      "id": "844_parawada_8",
+      "routeId": "844",
+      "stopId": "parawada",
+      "sequence": 8,
+      "referenceTime": "07:18"
+    },
+    {
+      "id": "844_kollivanipalem_9",
+      "routeId": "844",
+      "stopId": "kollivanipalem",
+      "sequence": 9,
+      "referenceTime": "07:33"
+    },
+    {
+      "id": "99A/C_collector_office_1",
+      "routeId": "99A/C",
+      "stopId": "collector_office",
+      "sequence": 1,
+      "referenceTime": "06:00"
+    },
+    {
+      "id": "99A/C_jagadamba_2",
+      "routeId": "99A/C",
+      "stopId": "jagadamba",
+      "sequence": 2,
+      "referenceTime": "06:05"
+    },
+    {
+      "id": "99A/C_town_kotharoad_3",
+      "routeId": "99A/C",
+      "stopId": "town_kotharoad",
+      "sequence": 3,
+      "referenceTime": "06:09"
+    },
+    {
+      "id": "99A/C_convent_4",
+      "routeId": "99A/C",
+      "stopId": "convent",
+      "sequence": 4,
+      "referenceTime": "06:13"
+    },
+    {
+      "id": "99A/C_scindia_5",
+      "routeId": "99A/C",
+      "stopId": "scindia",
+      "sequence": 5,
+      "referenceTime": "06:18"
+    },
+    {
+      "id": "99A/C_gajuwaka_6",
+      "routeId": "99A/C",
+      "stopId": "gajuwaka",
+      "sequence": 6,
+      "referenceTime": "06:26"
+    },
+    {
+      "id": "99A/C_kurmannapalem_7",
+      "routeId": "99A/C",
+      "stopId": "kurmannapalem",
+      "sequence": 7,
+      "referenceTime": "06:33"
+    },
+    {
+      "id": "99A/C_anakapalle_8",
+      "routeId": "99A/C",
+      "stopId": "anakapalle",
+      "sequence": 8,
+      "referenceTime": "07:09"
+    },
+    {
+      "id": "99A/C_chodavaram_9",
+      "routeId": "99A/C",
+      "stopId": "chodavaram",
+      "sequence": 9,
+      "referenceTime": "07:27"
+    }
+  ],
+  "transferConnections": [
+    {
+      "id": "tc_38Y_38M_nad",
+      "fromRouteId": "38Y",
+      "toRouteId": "38M",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500Y_nad",
+      "fromRouteId": "38Y",
+      "toRouteId": "500Y",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_600_nad",
+      "fromRouteId": "38Y",
+      "toRouteId": "600",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500A/C_nad",
+      "fromRouteId": "38Y",
+      "toRouteId": "500A/C",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500_nad",
+      "fromRouteId": "38Y",
+      "toRouteId": "500",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_38Y_nad",
+      "fromRouteId": "38M",
+      "toRouteId": "38Y",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500Y_nad",
+      "fromRouteId": "38M",
+      "toRouteId": "500Y",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_600_nad",
+      "fromRouteId": "38M",
+      "toRouteId": "600",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500A/C_nad",
+      "fromRouteId": "38M",
+      "toRouteId": "500A/C",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500_nad",
+      "fromRouteId": "38M",
+      "toRouteId": "500",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_38Y_nad",
+      "fromRouteId": "500Y",
+      "toRouteId": "38Y",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_38M_nad",
+      "fromRouteId": "500Y",
+      "toRouteId": "38M",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_600_nad",
+      "fromRouteId": "500Y",
+      "toRouteId": "600",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_500A/C_nad",
+      "fromRouteId": "500Y",
+      "toRouteId": "500A/C",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_500_nad",
+      "fromRouteId": "500Y",
+      "toRouteId": "500",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_38Y_nad",
+      "fromRouteId": "600",
+      "toRouteId": "38Y",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_38M_nad",
+      "fromRouteId": "600",
+      "toRouteId": "38M",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500Y_nad",
+      "fromRouteId": "600",
+      "toRouteId": "500Y",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500A/C_nad",
+      "fromRouteId": "600",
+      "toRouteId": "500A/C",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500_nad",
+      "fromRouteId": "600",
+      "toRouteId": "500",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_38Y_nad",
+      "fromRouteId": "500A/C",
+      "toRouteId": "38Y",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_38M_nad",
+      "fromRouteId": "500A/C",
+      "toRouteId": "38M",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_500Y_nad",
+      "fromRouteId": "500A/C",
+      "toRouteId": "500Y",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_600_nad",
+      "fromRouteId": "500A/C",
+      "toRouteId": "600",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_500_nad",
+      "fromRouteId": "500A/C",
+      "toRouteId": "500",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_38Y_nad",
+      "fromRouteId": "500",
+      "toRouteId": "38Y",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_38M_nad",
+      "fromRouteId": "500",
+      "toRouteId": "38M",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_500Y_nad",
+      "fromRouteId": "500",
+      "toRouteId": "500Y",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_600_nad",
+      "fromRouteId": "500",
+      "toRouteId": "600",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_500A/C_nad",
+      "fromRouteId": "500",
+      "toRouteId": "500A/C",
+      "transferStopId": "nad",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_99A/C_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400Y_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_600C_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500P_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_38M_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_844_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500Y_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400S_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400K_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_600_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500A/C_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400N_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_744_gajuwaka",
+      "fromRouteId": "38Y",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_38Y_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400Y_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_600C_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_500P_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_38M_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_844_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_500Y_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400S_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400K_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_600_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_500A/C_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_500_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400N_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_744_gajuwaka",
+      "fromRouteId": "99A/C",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_38Y_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_99A/C_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_600C_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_500P_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_38M_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_844_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_500Y_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400S_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400K_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_600_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_500A/C_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_500_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400N_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_744_gajuwaka",
+      "fromRouteId": "400Y",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_38Y_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_99A/C_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_400Y_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_500P_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_38M_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_844_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_400_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_500Y_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_400S_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_400K_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_600_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_500A/C_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_500_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_400N_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_744_gajuwaka",
+      "fromRouteId": "600C",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_38Y_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_99A/C_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400Y_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_600C_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_38M_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_844_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_500Y_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400S_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400K_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_600_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_500A/C_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_500_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400N_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_744_gajuwaka",
+      "fromRouteId": "500P",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_38Y_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_99A/C_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_400Y_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_600C_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500P_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_844_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_400_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500Y_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_400S_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_400K_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_600_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500A/C_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_400N_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_744_gajuwaka",
+      "fromRouteId": "38M",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_38Y_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_99A/C_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400Y_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_600C_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_500P_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_38M_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_500Y_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400S_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400K_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_600_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_500A/C_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_500_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400N_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_744_gajuwaka",
+      "fromRouteId": "844",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_38Y_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_99A/C_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400Y_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_600C_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_500P_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_38M_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_844_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_500Y_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400S_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400K_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_600_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_500A/C_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_500_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400N_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_744_gajuwaka",
+      "fromRouteId": "400",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_38Y_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_99A/C_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_400Y_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_600C_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_500P_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_38M_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_844_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_400_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_400S_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_400K_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_600_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_500A/C_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_500_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_400N_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_744_gajuwaka",
+      "fromRouteId": "500Y",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_38Y_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_99A/C_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400Y_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_600C_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_500P_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_38M_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_844_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_500Y_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400K_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_600_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_500A/C_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_500_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400N_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_744_gajuwaka",
+      "fromRouteId": "400S",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_38Y_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_99A/C_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400Y_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_600C_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_500P_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_38M_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_844_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_500Y_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400S_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_600_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_500A/C_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_500_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400N_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_744_gajuwaka",
+      "fromRouteId": "400K",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_38Y_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_99A/C_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400Y_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_600C_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500P_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_38M_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_844_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500Y_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400S_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400K_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500A/C_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400N_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_744_gajuwaka",
+      "fromRouteId": "600",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_38Y_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_99A/C_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_400Y_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_600C_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_500P_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_38M_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_844_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_400_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_500Y_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_400S_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_400K_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_600_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_500_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_400N_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_744_gajuwaka",
+      "fromRouteId": "500A/C",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_38Y_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_99A/C_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_400Y_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_600C_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_500P_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_38M_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_844_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_400_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_500Y_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_400S_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_400K_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_600_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_500A/C_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_400N_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_744_gajuwaka",
+      "fromRouteId": "500",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_38Y_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_99A/C_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400Y_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_600C_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_500P_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_38M_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_844_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_500Y_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400S_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400K_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_600_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_500A/C_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_500_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_744_gajuwaka",
+      "fromRouteId": "400N",
+      "toRouteId": "744",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_38Y_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "38Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_99A/C_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "99A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400Y_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "400Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_600C_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "600C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_500P_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "500P",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_38M_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "38M",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_844_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "844",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "400",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_500Y_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "500Y",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400S_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "400S",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400K_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "400K",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_600_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "600",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_500A/C_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "500A/C",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_500_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "500",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400N_gajuwaka",
+      "fromRouteId": "744",
+      "toRouteId": "400N",
+      "transferStopId": "gajuwaka",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_99A/C_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400Y_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_600C_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500P_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_38M_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_844_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500Y_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400S_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400K_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_600_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500A/C_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_500_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400N_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_744_kurmannapalem",
+      "fromRouteId": "38Y",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_38Y_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400Y_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_600C_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_500P_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_38M_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_844_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_500Y_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400S_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400K_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_600_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_500A/C_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_500_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400N_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_744_kurmannapalem",
+      "fromRouteId": "99A/C",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_38Y_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_99A/C_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_600C_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_500P_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_38M_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_844_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_500Y_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400S_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400K_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_600_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_500A/C_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_500_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400N_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_744_kurmannapalem",
+      "fromRouteId": "400Y",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_38Y_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_99A/C_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_400Y_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_500P_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_38M_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_844_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_400_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_500Y_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_400S_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_400K_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_600_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_500A/C_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_500_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_400N_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600C_744_kurmannapalem",
+      "fromRouteId": "600C",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_38Y_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_99A/C_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400Y_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_600C_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_38M_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_844_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_500Y_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400S_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400K_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_600_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_500A/C_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_500_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400N_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_744_kurmannapalem",
+      "fromRouteId": "500P",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_38Y_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_99A/C_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_400Y_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_600C_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500P_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_844_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_400_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500Y_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_400S_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_400K_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_600_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500A/C_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_500_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_400N_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38M_744_kurmannapalem",
+      "fromRouteId": "38M",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_38Y_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_99A/C_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400Y_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_600C_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_500P_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_38M_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_500Y_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400S_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400K_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_600_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_500A/C_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_500_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400N_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_744_kurmannapalem",
+      "fromRouteId": "844",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_38Y_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_99A/C_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400Y_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_600C_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_500P_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_38M_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_844_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_500Y_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400S_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400K_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_600_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_500A/C_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_500_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400N_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_744_kurmannapalem",
+      "fromRouteId": "400",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_38Y_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_99A/C_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_400Y_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_600C_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_500P_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_38M_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_844_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_400_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_400S_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_400K_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_600_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_500A/C_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_500_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_400N_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500Y_744_kurmannapalem",
+      "fromRouteId": "500Y",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_38Y_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_99A/C_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400Y_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_600C_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_500P_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_38M_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_844_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_500Y_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400K_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_600_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_500A/C_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_500_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400N_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_744_kurmannapalem",
+      "fromRouteId": "400S",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_38Y_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_99A/C_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400Y_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_600C_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_500P_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_38M_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_844_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_500Y_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400S_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_600_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_500A/C_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_500_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400N_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_744_kurmannapalem",
+      "fromRouteId": "400K",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_38Y_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_99A/C_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400Y_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_600C_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500P_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_38M_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_844_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500Y_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400S_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400K_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500A/C_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400N_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_744_kurmannapalem",
+      "fromRouteId": "600",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_38Y_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_99A/C_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_400Y_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_600C_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_500P_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_38M_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_844_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_400_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_500Y_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_400S_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_400K_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_600_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_500_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_400N_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500A/C_744_kurmannapalem",
+      "fromRouteId": "500A/C",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_38Y_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_99A/C_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_400Y_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_600C_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_500P_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_38M_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_844_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_400_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_500Y_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_400S_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_400K_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_600_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_500A/C_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_400N_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500_744_kurmannapalem",
+      "fromRouteId": "500",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_38Y_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_99A/C_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400Y_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_600C_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_500P_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_38M_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_844_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_500Y_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400S_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400K_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_600_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_500A/C_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_500_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_744_kurmannapalem",
+      "fromRouteId": "400N",
+      "toRouteId": "744",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_38Y_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "38Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_99A/C_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "99A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400Y_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "400Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_600C_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "600C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_500P_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "500P",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_38M_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "38M",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_844_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "844",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "400",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_500Y_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "500Y",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400S_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "400S",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400K_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "400K",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_600_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "600",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_500A/C_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "500A/C",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_500_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "500",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400N_kurmannapalem",
+      "fromRouteId": "744",
+      "toRouteId": "400N",
+      "transferStopId": "kurmannapalem",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_38Y_400K_duvvada",
+      "fromRouteId": "38Y",
+      "toRouteId": "400K",
+      "transferStopId": "duvvada",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_38Y_duvvada",
+      "fromRouteId": "400K",
+      "toRouteId": "38Y",
+      "transferStopId": "duvvada",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400Y_scindia",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400Y",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_500P_scindia",
+      "fromRouteId": "99A/C",
+      "toRouteId": "500P",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400_scindia",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400S_scindia",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400S",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400K_scindia",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400K",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_600_scindia",
+      "fromRouteId": "99A/C",
+      "toRouteId": "600",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_844_scindia",
+      "fromRouteId": "99A/C",
+      "toRouteId": "844",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_400N_scindia",
+      "fromRouteId": "99A/C",
+      "toRouteId": "400N",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_99A/C_744_scindia",
+      "fromRouteId": "99A/C",
+      "toRouteId": "744",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_99A/C_scindia",
+      "fromRouteId": "400Y",
+      "toRouteId": "99A/C",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_500P_scindia",
+      "fromRouteId": "400Y",
+      "toRouteId": "500P",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400_scindia",
+      "fromRouteId": "400Y",
+      "toRouteId": "400",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400S_scindia",
+      "fromRouteId": "400Y",
+      "toRouteId": "400S",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400K_scindia",
+      "fromRouteId": "400Y",
+      "toRouteId": "400K",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_600_scindia",
+      "fromRouteId": "400Y",
+      "toRouteId": "600",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_844_scindia",
+      "fromRouteId": "400Y",
+      "toRouteId": "844",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_400N_scindia",
+      "fromRouteId": "400Y",
+      "toRouteId": "400N",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400Y_744_scindia",
+      "fromRouteId": "400Y",
+      "toRouteId": "744",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_99A/C_scindia",
+      "fromRouteId": "500P",
+      "toRouteId": "99A/C",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400Y_scindia",
+      "fromRouteId": "500P",
+      "toRouteId": "400Y",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400_scindia",
+      "fromRouteId": "500P",
+      "toRouteId": "400",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400S_scindia",
+      "fromRouteId": "500P",
+      "toRouteId": "400S",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400K_scindia",
+      "fromRouteId": "500P",
+      "toRouteId": "400K",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_600_scindia",
+      "fromRouteId": "500P",
+      "toRouteId": "600",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_844_scindia",
+      "fromRouteId": "500P",
+      "toRouteId": "844",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_400N_scindia",
+      "fromRouteId": "500P",
+      "toRouteId": "400N",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_500P_744_scindia",
+      "fromRouteId": "500P",
+      "toRouteId": "744",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_99A/C_scindia",
+      "fromRouteId": "400",
+      "toRouteId": "99A/C",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400Y_scindia",
+      "fromRouteId": "400",
+      "toRouteId": "400Y",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_500P_scindia",
+      "fromRouteId": "400",
+      "toRouteId": "500P",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400S_scindia",
+      "fromRouteId": "400",
+      "toRouteId": "400S",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400K_scindia",
+      "fromRouteId": "400",
+      "toRouteId": "400K",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_600_scindia",
+      "fromRouteId": "400",
+      "toRouteId": "600",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_844_scindia",
+      "fromRouteId": "400",
+      "toRouteId": "844",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_400N_scindia",
+      "fromRouteId": "400",
+      "toRouteId": "400N",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400_744_scindia",
+      "fromRouteId": "400",
+      "toRouteId": "744",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_99A/C_scindia",
+      "fromRouteId": "400S",
+      "toRouteId": "99A/C",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400Y_scindia",
+      "fromRouteId": "400S",
+      "toRouteId": "400Y",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_500P_scindia",
+      "fromRouteId": "400S",
+      "toRouteId": "500P",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400_scindia",
+      "fromRouteId": "400S",
+      "toRouteId": "400",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400K_scindia",
+      "fromRouteId": "400S",
+      "toRouteId": "400K",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_600_scindia",
+      "fromRouteId": "400S",
+      "toRouteId": "600",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_844_scindia",
+      "fromRouteId": "400S",
+      "toRouteId": "844",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_400N_scindia",
+      "fromRouteId": "400S",
+      "toRouteId": "400N",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400S_744_scindia",
+      "fromRouteId": "400S",
+      "toRouteId": "744",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_99A/C_scindia",
+      "fromRouteId": "400K",
+      "toRouteId": "99A/C",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400Y_scindia",
+      "fromRouteId": "400K",
+      "toRouteId": "400Y",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_500P_scindia",
+      "fromRouteId": "400K",
+      "toRouteId": "500P",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400_scindia",
+      "fromRouteId": "400K",
+      "toRouteId": "400",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400S_scindia",
+      "fromRouteId": "400K",
+      "toRouteId": "400S",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_600_scindia",
+      "fromRouteId": "400K",
+      "toRouteId": "600",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_844_scindia",
+      "fromRouteId": "400K",
+      "toRouteId": "844",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_400N_scindia",
+      "fromRouteId": "400K",
+      "toRouteId": "400N",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400K_744_scindia",
+      "fromRouteId": "400K",
+      "toRouteId": "744",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_99A/C_scindia",
+      "fromRouteId": "600",
+      "toRouteId": "99A/C",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400Y_scindia",
+      "fromRouteId": "600",
+      "toRouteId": "400Y",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_500P_scindia",
+      "fromRouteId": "600",
+      "toRouteId": "500P",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400_scindia",
+      "fromRouteId": "600",
+      "toRouteId": "400",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400S_scindia",
+      "fromRouteId": "600",
+      "toRouteId": "400S",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400K_scindia",
+      "fromRouteId": "600",
+      "toRouteId": "400K",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_844_scindia",
+      "fromRouteId": "600",
+      "toRouteId": "844",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_400N_scindia",
+      "fromRouteId": "600",
+      "toRouteId": "400N",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_600_744_scindia",
+      "fromRouteId": "600",
+      "toRouteId": "744",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_99A/C_scindia",
+      "fromRouteId": "844",
+      "toRouteId": "99A/C",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400Y_scindia",
+      "fromRouteId": "844",
+      "toRouteId": "400Y",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_500P_scindia",
+      "fromRouteId": "844",
+      "toRouteId": "500P",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400_scindia",
+      "fromRouteId": "844",
+      "toRouteId": "400",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400S_scindia",
+      "fromRouteId": "844",
+      "toRouteId": "400S",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400K_scindia",
+      "fromRouteId": "844",
+      "toRouteId": "400K",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_600_scindia",
+      "fromRouteId": "844",
+      "toRouteId": "600",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_400N_scindia",
+      "fromRouteId": "844",
+      "toRouteId": "400N",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_844_744_scindia",
+      "fromRouteId": "844",
+      "toRouteId": "744",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_99A/C_scindia",
+      "fromRouteId": "400N",
+      "toRouteId": "99A/C",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400Y_scindia",
+      "fromRouteId": "400N",
+      "toRouteId": "400Y",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_500P_scindia",
+      "fromRouteId": "400N",
+      "toRouteId": "500P",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400_scindia",
+      "fromRouteId": "400N",
+      "toRouteId": "400",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400S_scindia",
+      "fromRouteId": "400N",
+      "toRouteId": "400S",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_400K_scindia",
+      "fromRouteId": "400N",
+      "toRouteId": "400K",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_600_scindia",
+      "fromRouteId": "400N",
+      "toRouteId": "600",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_844_scindia",
+      "fromRouteId": "400N",
+      "toRouteId": "844",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_400N_744_scindia",
+      "fromRouteId": "400N",
+      "toRouteId": "744",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_99A/C_scindia",
+      "fromRouteId": "744",
+      "toRouteId": "99A/C",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400Y_scindia",
+      "fromRouteId": "744",
+      "toRouteId": "400Y",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_500P_scindia",
+      "fromRouteId": "744",
+      "toRouteId": "500P",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400_scindia",
+      "fromRouteId": "744",
+      "toRouteId": "400",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400S_scindia",
+      "fromRouteId": "744",
+      "toRouteId": "400S",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400K_scindia",
+      "fromRouteId": "744",
+      "toRouteId": "400K",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_600_scindia",
+      "fromRouteId": "744",
+      "toRouteId": "600",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_844_scindia",
+      "fromRouteId": "744",
+      "toRouteId": "844",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    },
+    {
+      "id": "tc_744_400N_scindia",
+      "fromRouteId": "744",
+      "toRouteId": "400N",
+      "transferStopId": "scindia",
+      "walkingDistanceMeters": 50,
+      "estimatedTransferMinutes": 5,
+      "enabled": true
+    }
+  ],
+  "college": {
+    "id": "duvvada_college",
+    "name": "Duvvada / Kompallaju College",
+    "duvvadaStationStopId": "duvvada",
+    "collegeTravelTimeMinutes": 6
+  },
+  "lastMileConnections": [
+    {
+      "id": "duvvada_to_college",
+      "fromStopId": "duvvada",
+      "toDestinationId": "duvvada_college",
+      "destinationName": "Duvvada College",
+      "mode": "walk",
+      "distanceMeters": 600,
+      "estimatedMinutes": 6,
+      "enabled": true
+    },
+    {
+      "id": "kurmannapalem_to_rajiv_nagar",
+      "fromStopId": "kurmannapalem",
+      "toDestinationId": "rajiv_nagar",
+      "destinationName": "Rajiv Nagar",
+      "mode": "bus",
+      "distanceMeters": 1800,
+      "estimatedMinutes": 10,
+      "enabled": true
+    },
+    {
+      "id": "rajiv_nagar_to_college",
+      "fromStopId": "rajiv_nagar",
+      "toDestinationId": "duvvada_college",
+      "destinationName": "Duvvada College",
+      "mode": "walk",
+      "distanceMeters": 1200,
+      "estimatedMinutes": 15,
+      "enabled": true
+    }
+  ]
+}

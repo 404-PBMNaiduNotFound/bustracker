@@ -1,25 +1,51 @@
-import React, { useState, useEffect } from "react";
-import { collection, onSnapshot, doc, setDoc } from "firebase/firestore";
-import { db } from "./lib/firebase";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Stop,
   Route,
+  RouteStopOrder,
+  TransferConnection,
   Bus,
   ActiveJourney,
   ArrivalObservation,
+  StudentConfirmation,
   CrowdLevel,
 } from "./types";
-import { MASTER_STOPS, MASTER_ROUTES, seedFirestoreDatabase } from "./lib/seeder";
 import {
-  calculateRouteCrowd,
+  MASTER_STOPS,
+  MASTER_ROUTES,
+  MASTER_ROUTE_STOPS,
+  MASTER_TRANSFER_CONNECTIONS,
+  seedFirestoreDatabase,
+} from "./lib/seeder";
+import {
+  subscribeStops,
+  subscribeRoutes,
+  subscribeRouteStops,
+  subscribeTransferConnections,
+  subscribeBuses,
+  subscribeActiveJourneys,
+  subscribeArrivalObservations,
+  subscribeStudentConfirmations,
+  updateActiveStudentJourney,
+  recordStudentConfirmation,
+  recordArrivalObservation,
+  updateCollegeTargetTime,
+  subscribeCollegeTargetTime,
+} from "./services/firebaseService";
+import {
+  startContinuousGpsTracking,
+  stopContinuousGpsTracking,
   findNearestStop,
-  calculateDistanceKm,
-} from "./lib/gpsEngine";
-import { calculatePredictiveETA, generateRouteOptions } from "./lib/etaEngine";
+  getDebouncedCurrentStop,
+} from "./services/gpsService";
+import { calculateRouteCrowdMetrics } from "./services/crowdService";
+import { calculatePredictiveETAFromObservations } from "./services/etaEngine";
+import { generateAllRouteRecommendations } from "./services/recommendationEngine";
+import { validateStudentVoteEligibility } from "./services/studentJourneyValidator";
 import {
   startDemoSimulation,
   stopDemoSimulation,
-  adjustCrowdSimulation,
+  applyDemoSimulationParams,
 } from "./lib/simulator";
 
 import { Header } from "./components/Header";
@@ -31,33 +57,53 @@ import { ProfileTab } from "./components/ProfileTab";
 
 export function App() {
   const [activeTab, setActiveTab] = useState<"home" | "live" | "routes" | "profile">("home");
-  const [boardingPoint, setBoardingPoint] = useState<string>("Simhachalam");
+  const [boardingPoint, setBoardingPoint] = useState<string>("Old Gajuwaka");
+  
+  // Persisted College Target Time (stored in localStorage & Firestore)
+  const [targetCollegeTime, setTargetCollegeTimeState] = useState<string>(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      return localStorage.getItem("routereach_targetCollegeTime") || "08:45 AM";
+    }
+    return "08:45 AM";
+  });
+
+  const setTargetCollegeTime = (newTime: string) => {
+    setTargetCollegeTimeState(newTime);
+    updateCollegeTargetTime(newTime);
+  };
 
   // GPS & User Onboard State
-  const [userLat, setUserLat] = useState<number | null>(17.6745);
-  const [userLng, setUserLng] = useState<number | null>(83.1850);
-  const [isGpsActive, setIsGpsActive] = useState<boolean>(true);
+  const [userLat, setUserLat] = useState<number | null>(17.6896);
+  const [userLng, setUserLng] = useState<number | null>(83.2185);
+  const [isGpsActive, setIsGpsActive] = useState<boolean>(false);
+  const [gpsPermissionGranted, setGpsPermissionGranted] = useState<boolean>(false);
+  const [gpsPermissionError, setGpsPermissionError] = useState<string | null>(null);
   const [isUserOnboard, setIsUserOnboard] = useState<boolean>(false);
   const [userStatusMessage, setUserStatusMessage] = useState<string>("🚏 WAITING AT BOARDING STOP");
 
-  // Firestore Realtime Collections State
+  // Firestore Realtime Master & Dynamic Collections State
   const [stops, setStops] = useState<Stop[]>(MASTER_STOPS);
   const [routes, setRoutes] = useState<Route[]>(MASTER_ROUTES);
+  const [routeStops, setRouteStops] = useState<RouteStopOrder[]>(MASTER_ROUTE_STOPS);
+  const [transferConnections, setTransferConnections] = useState<TransferConnection[]>(
+    MASTER_TRANSFER_CONNECTIONS
+  );
   const [buses, setBuses] = useState<Bus[]>([]);
   const [activeJourneys, setActiveJourneys] = useState<ActiveJourney[]>([]);
   const [observations, setObservations] = useState<ArrivalObservation[]>([]);
+  const [confirmations, setConfirmations] = useState<StudentConfirmation[]>([]);
 
-  // Simulation & Crowd Override State
+  // Simulation & Local Confirmation State
   const [isSimulating, setIsSimulating] = useState<boolean>(false);
   const [hasUserConfirmed, setHasUserConfirmed] = useState<boolean>(false);
-  const [confirmedCount, setConfirmedCount] = useState<number>(18);
-  const [crowdLevelOverride, setCrowdLevelOverride] = useState<CrowdLevel | null>(null);
-  const [activeCountOverride, setActiveCountOverride] = useState<number | null>(null);
 
   const [toastMessage, setToastMessage] = useState<string | null>(null);
-  const [lastUpdatedSecondsAgo, setLastUpdatedSecondsAgo] = useState<number>(12);
+  const [lastUpdatedSecondsAgo, setLastUpdatedSecondsAgo] = useState<number>(0);
 
-  // Auto-seed Firestore on initial launch
+  const prevMatchedStopRef = useRef<Stop | null>(null);
+  const watchIdRef = useRef<number | null>(null);
+
+  // 1. Initial Launch: Seed Master Database into Firestore if empty
   useEffect(() => {
     async function initSeeding() {
       try {
@@ -69,102 +115,35 @@ export function App() {
     initSeeding();
   }, []);
 
-  // 1. Firestore Realtime Listener: Stops
+  // 2. Real-time Firestore Listeners for runtime single source of truth
   useEffect(() => {
-    const unsubscribe = onSnapshot(
-      collection(db, "stops"),
-      (snapshot) => {
-        if (!snapshot.empty) {
-          const loadedStops: Stop[] = [];
-          snapshot.forEach((d) => loadedStops.push(d.data() as Stop));
-          setStops(loadedStops);
-        }
-      },
-      (err) => console.log("Stops listener fallback:", err)
-    );
-    return () => unsubscribe();
+    const unsubStops = subscribeStops((data) => setStops(data));
+    const unsubRoutes = subscribeRoutes((data) => setRoutes(data));
+    const unsubRouteStops = subscribeRouteStops((data) => setRouteStops(data));
+    const unsubTransfers = subscribeTransferConnections((data) => setTransferConnections(data));
+    const unsubBuses = subscribeBuses((data) => {
+      setBuses(data);
+      setLastUpdatedSecondsAgo(0);
+    });
+    const unsubJourneys = subscribeActiveJourneys((data) => setActiveJourneys(data));
+    const unsubObs = subscribeArrivalObservations((data) => setObservations(data));
+    const unsubConf = subscribeStudentConfirmations((data) => setConfirmations(data));
+    const unsubTargetTime = subscribeCollegeTargetTime((time) => setTargetCollegeTimeState(time));
+
+    return () => {
+      unsubStops();
+      unsubRoutes();
+      unsubRouteStops();
+      unsubTransfers();
+      unsubBuses();
+      unsubJourneys();
+      unsubObs();
+      unsubConf();
+      unsubTargetTime();
+    };
   }, []);
 
-  // 2. Firestore Realtime Listener: Master Routes (10 Corridors)
-  useEffect(() => {
-    const unsubscribe = onSnapshot(
-      collection(db, "routes"),
-      (snapshot) => {
-        if (!snapshot.empty) {
-          const loadedRoutes: Route[] = [];
-          snapshot.forEach((d) => loadedRoutes.push(d.data() as Route));
-          setRoutes(loadedRoutes);
-        }
-      },
-      (err) => console.log("Routes listener fallback:", err)
-    );
-    return () => unsubscribe();
-  }, []);
-
-  // 3. Firestore Realtime Listener: Buses (Bus positions)
-  useEffect(() => {
-    const unsubscribe = onSnapshot(
-      collection(db, "buses"),
-      (snapshot) => {
-        if (!snapshot.empty) {
-          const loadedBuses: Bus[] = [];
-          snapshot.forEach((d) => loadedBuses.push(d.data() as Bus));
-          setBuses(loadedBuses);
-          setLastUpdatedSecondsAgo(0);
-        }
-      },
-      (err) => console.log("Buses listener fallback:", err)
-    );
-    return () => unsubscribe();
-  }, []);
-
-  // 4. Firestore Realtime Listener: Active Journeys (Student crowd stream)
-  useEffect(() => {
-    const unsubscribe = onSnapshot(
-      collection(db, "activeJourneys"),
-      (snapshot) => {
-        if (!snapshot.empty) {
-          const journeys: ActiveJourney[] = [];
-          snapshot.forEach((d) => journeys.push(d.data() as ActiveJourney));
-          setActiveJourneys(journeys);
-        }
-      },
-      (err) => console.log("Journeys listener fallback:", err)
-    );
-    return () => unsubscribe();
-  }, []);
-
-  // 5. Firestore Realtime Listener: Arrival Observations
-  useEffect(() => {
-    const unsubscribe = onSnapshot(
-      collection(db, "arrivalObservations"),
-      (snapshot) => {
-        if (!snapshot.empty) {
-          const obsList: ArrivalObservation[] = [];
-          snapshot.forEach((d) => obsList.push(d.data() as ArrivalObservation));
-          setObservations(obsList);
-        }
-      },
-      (err) => console.log("Observations listener fallback:", err)
-    );
-    return () => unsubscribe();
-  }, []);
-
-  // 6. Firestore Realtime Listener: Student Confirmations (Votes History Collection)
-  useEffect(() => {
-    const unsubscribe = onSnapshot(
-      collection(db, "studentConfirmations"),
-      (snapshot) => {
-        if (!snapshot.empty) {
-          setConfirmedCount(Math.max(18, snapshot.size));
-        }
-      },
-      (err) => console.log("Confirmations listener fallback:", err)
-    );
-    return () => unsubscribe();
-  }, []);
-
-  // Timer increment for last updated counter
+  // 3. Increment update timer
   useEffect(() => {
     const interval = setInterval(() => {
       setLastUpdatedSecondsAgo((prev) => prev + 1);
@@ -172,105 +151,111 @@ export function App() {
     return () => clearInterval(interval);
   }, []);
 
-  // Dynamic Route & Bus Selection based on Boarding Point (No hardcoded 38Y only!)
+  // Dynamic Route & Bus Lookup based on Boarding Point
   const getRouteForBoarding = (boarding: string): { routeId: string; busNum: string } => {
-    switch (boarding) {
-      case "Scindia":
-        return { routeId: "route_311", busNum: "311" };
-      case "Tagarapuvalasa":
-        return { routeId: "route_111", busNum: "111" };
-      case "Simhachalam":
-        return { routeId: "route_55y", busNum: "55Y" };
-      case "Pendurthi":
-        return { routeId: "route_55p", busNum: "55P" };
-      default:
-        return { routeId: "route_38y", busNum: "38Y" };
+    const matchedStop = stops.find((s) => s.name.toLowerCase() === boarding.toLowerCase());
+    const stopId = matchedStop?.id || "gajuwaka";
+    const rs = routeStops.find((r) => r.stopId === stopId);
+    if (rs) {
+      return { routeId: rs.routeId, busNum: rs.routeId };
     }
+    return { routeId: "38Y", busNum: "38Y" };
   };
 
   const activeRouteMeta = getRouteForBoarding(boardingPoint);
   const activeBus = buses.find((b) => b.busNumber === activeRouteMeta.busNum) || buses[0] || {
-    currentStopId: "stop_kurmannapalem",
+    currentStopId: "gajuwaka",
     busNumber: activeRouteMeta.busNum,
     routeId: activeRouteMeta.routeId,
   };
 
-  const currentStopId = activeBus.currentStopId || "stop_kurmannapalem";
-  const currentStop = stops.find((s) => s.id === currentStopId) || stops[5] || MASTER_STOPS[5];
-
-  // Derived Real Travel Count (Shows 0 when inactive, exact count when simulation / journeys active)
-  const crowdMetrics = calculateRouteCrowd(activeRouteMeta.routeId, activeJourneys);
-  const rawActiveJourneysCount = activeJourneys.filter((j) => j.journeyStatus !== "ARRIVED").length;
-  
-  const activeStudentCount =
-    activeCountOverride !== null
-      ? activeCountOverride
-      : isSimulating || rawActiveJourneysCount > 0
-      ? crowdMetrics.activeCount || rawActiveJourneysCount
-      : 0;
-
-  const crowdLevel: CrowdLevel =
-    crowdLevelOverride !== null
-      ? crowdLevelOverride
-      : activeStudentCount > 15
-      ? "HIGH"
-      : activeStudentCount >= 5
-      ? "MEDIUM"
-      : "LOW";
-
-  // Derived Predictive ETA
+  const currentStopId = activeBus.currentStopId || "gajuwaka";
+  const currentStop = stops.find((s) => s.id === currentStopId) || stops[0] || MASTER_STOPS[0];
   const selectedRouteObj = routes.find((r) => r.id === activeRouteMeta.routeId) || MASTER_ROUTES[0];
-  const etaPrediction = calculatePredictiveETA(
+
+  // 4. Continuous Student GPS Tracking Handler (Bypassed in Demo Mode)
+  const requestUserGpsLocation = () => {
+    if (isSimulating) {
+      showToast("🟣 Demo Mode Active: Location is controlled by Presenter Controls.");
+      return;
+    }
+
+    if (watchIdRef.current) {
+      stopContinuousGpsTracking(watchIdRef.current);
+    }
+
+    showToast("📍 Requesting Continuous Device GPS Location...");
+
+    const id = startContinuousGpsTracking(
+      (status) => {
+        setIsGpsActive(status.isGpsActive || false);
+        setGpsPermissionGranted(status.permissionGranted || false);
+        setGpsPermissionError(status.permissionError || null);
+
+        if (status.userLat && status.userLng && !isSimulating) {
+          setUserLat(status.userLat);
+          setUserLng(status.userLng);
+
+          // Automatic Stop Detection with Debouncing (Only in Real Mode)
+          const debouncedStop = getDebouncedCurrentStop(
+            status.userLat,
+            status.userLng,
+            prevMatchedStopRef.current,
+            stops
+          );
+
+          if (debouncedStop && !isSimulating) {
+            prevMatchedStopRef.current = debouncedStop;
+            setBoardingPoint(debouncedStop.name);
+
+            // Update student's active journey in Firestore seamlessly
+            updateActiveStudentJourney({
+              id: "std_current_user",
+              userId: "std_current_user",
+              routeId: activeRouteMeta.routeId,
+              boardingPoint: debouncedStop.name,
+              currentStopId: debouncedStop.id,
+              latitude: status.userLat,
+              longitude: status.userLng,
+              lastUpdated: new Date().toISOString(),
+              journeyStatus: debouncedStop.isDestination ? "ARRIVED" : "IN_TRANSIT",
+              confidence: "HIGH",
+              confirmedByStudent: hasUserConfirmed,
+            });
+          }
+        }
+      },
+      (errorMsg) => {
+        setGpsPermissionGranted(false);
+        setGpsPermissionError(errorMsg);
+        showToast(errorMsg);
+      }
+    );
+
+    watchIdRef.current = id;
+  };
+
+  // 5. Crowd Metrics & Predictive ETA Engines
+  const crowdMetrics = calculateRouteCrowdMetrics(activeRouteMeta.routeId, activeJourneys, confirmations);
+  const etaPrediction = calculatePredictiveETAFromObservations(
     currentStopId,
     selectedRouteObj,
     stops,
     observations
   );
 
-  // Derived Route Options for Alternative Decision Support
-  const routeOptions = generateRouteOptions(
-    boardingPoint,
-    currentStopId,
-    activeStudentCount,
-    crowdLevel,
-    observations
+  // 6. Dynamic Graph Pathfinding & Recommendation Engine
+  const boardingStopObj = stops.find((s) => s.name.toLowerCase() === boardingPoint.toLowerCase()) || stops[0];
+  const routeOptions = generateAllRouteRecommendations(
+    boardingStopObj ? boardingStopObj.id : "gajuwaka",
+    routes,
+    stops,
+    routeStops,
+    transferConnections,
+    activeJourneys,
+    observations,
+    targetCollegeTime
   );
-  const alternativeOption = routeOptions.find((o) => o.type === "TRANSFER") || routeOptions[1];
-
-  // On-Road Highway Corridor Check (True if user is near corridor / simulation active)
-  const nearestStopResult = userLat && userLng ? findNearestStop(userLat, userLng, stops) : null;
-  const isUserOnRoads = isSimulating || (nearestStopResult !== null && nearestStopResult.distanceKm <= 2.5);
-
-  // Automatic GPS Location Request & Stop Detection Engine
-  const requestUserGpsLocation = () => {
-    if ("geolocation" in navigator) {
-      showToast("📍 Requesting Device GPS Location...");
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const lat = position.coords.latitude;
-          const lng = position.coords.longitude;
-          setUserLat(lat);
-          setUserLng(lng);
-          setIsGpsActive(true);
-
-          const matched = findNearestStop(lat, lng, stops);
-          if (matched) {
-            setBoardingPoint(matched.nearestStop.name);
-            showToast(`📍 Nearest Stop Matched: ${matched.nearestStop.name}! Suggested Bus: ${getRouteForBoarding(matched.nearestStop.name).busNum}`);
-          }
-        },
-        (error) => {
-          const simLat = 17.6745;
-          const simLng = 83.1850;
-          setUserLat(simLat);
-          setUserLng(simLng);
-          setIsGpsActive(true);
-          setBoardingPoint("Kurmannapalem");
-          showToast("📍 GPS active (Matched: Kurmannapalem Stop). Suggested Bus: 38Y");
-        }
-      );
-    }
-  };
 
   // Handlers
   const handleToggleSimulation = () => {
@@ -279,76 +264,95 @@ export function App() {
       setIsSimulating(false);
       setIsUserOnboard(false);
       setUserStatusMessage("🚏 WAITING AT BOARDING STOP");
-      showToast("Simulation paused.");
+      showToast("Demo Mode stopped.");
     } else {
+      if (watchIdRef.current) {
+        stopContinuousGpsTracking(watchIdRef.current);
+      }
       setIsSimulating(true);
-      startDemoSimulation((stopName, stepIndex) => {
-        setLastUpdatedSecondsAgo(0);
-        if (stepIndex >= 2 && stepIndex <= 4) {
-          setIsUserOnboard(true);
-          setUserStatusMessage(`🚌 ON BOARD / TRAVELLING ON BUS ${activeRouteMeta.busNum}`);
-        } else {
-          setIsUserOnboard(false);
-          setUserStatusMessage(`🚏 WAITING AT ${stopName} STOP`);
-        }
-      });
-      showToast(`Live simulation started: ${boardingPoint} → Duvvada`);
+      startDemoSimulation(
+        (stopName, stepIndex) => {
+          setLastUpdatedSecondsAgo(0);
+          if (stepIndex >= 2 && stepIndex <= 4) {
+            setIsUserOnboard(true);
+            setUserStatusMessage(`🚌 ON BOARD / TRAVELLING ON BUS ${activeRouteMeta.busNum}`);
+          } else {
+            setIsUserOnboard(false);
+            setUserStatusMessage(`🚏 WAITING AT ${stopName} STOP`);
+          }
+        },
+        4000,
+        activeRouteMeta.routeId
+      );
+      showToast(`DEMO MODE started: Simhachalam → Duvvada`);
     }
   };
 
   const handleRunSeeder = async () => {
-    showToast("Seeding 10 Master Routes into Firestore...");
+    showToast("Seeding 16 Master Routes & 35 Stops from Excel into Firestore...");
     const res = await seedFirestoreDatabase();
     showToast(res.message);
   };
 
   const handleAdjustCrowd = async (level: CrowdLevel) => {
-    setCrowdLevelOverride(level);
-    if (level === "LOW") setActiveCountOverride(3);
-    if (level === "MEDIUM") setActiveCountOverride(10);
-    if (level === "HIGH") setActiveCountOverride(27);
-
-    await adjustCrowdSimulation(level);
-    showToast(`✓ Crowd level set to ${level}!`);
+    const count = level === "VERY HIGH" ? 20 : level === "HIGH" ? 12 : level === "MEDIUM" ? 6 : 2;
+    await applyDemoSimulationParams(currentStopId, count, activeRouteMeta.routeId, stops);
+    showToast(`✓ Crowd level adjusted to ${level}!`);
   };
 
-  // Student Vote Handler: Saves vote history record to Firestore
   const handleConfirmBus = async () => {
     if (hasUserConfirmed) return;
-    if (!isUserOnRoads) {
-      showToast("⚠️ Voting active when on bus route corridor / NH-16!");
+
+    // Validate strict voting eligibility criteria
+    const voteCheck = validateStudentVoteEligibility(
+      userLat || currentStop.lat,
+      userLng || currentStop.lng,
+      currentStopId,
+      stops,
+      activeJourneys,
+      isSimulating
+    );
+
+    if (!voteCheck.canVote) {
+      showToast(voteCheck.message);
       return;
     }
-    setHasUserConfirmed(true);
-    setConfirmedCount((prev) => prev + 1);
 
-    const voteTimestamp = new Date().toISOString();
-    const timeFormatted = new Date().toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
+    setHasUserConfirmed(true);
 
     try {
-      await setDoc(doc(db, "studentConfirmations", `conf_vote_${Date.now()}`), {
-        id: `conf_vote_${Date.now()}`,
-        userId: "std_student_main",
-        busNumber: activeRouteMeta.busNum,
+      // 1. Record confirmation vote in studentConfirmations
+      await recordStudentConfirmation(
+        "std_current_user",
+        activeRouteMeta.busNum,
+        activeRouteMeta.routeId,
+        currentStopId
+      );
+
+      // 2. Record arrival observation in arrivalObservations
+      await recordArrivalObservation(
+        activeRouteMeta.routeId,
+        currentStopId,
+        12,
+        "std_current_user"
+      );
+
+      // 3. Update active journey in activeJourneys so passenger count updates immediately
+      await updateActiveStudentJourney({
+        id: "std_current_user",
+        userId: "std_current_user",
         routeId: activeRouteMeta.routeId,
-        stopId: currentStopId,
-        stopName: currentStop.name,
-        timestamp: voteTimestamp,
-        isConfirmed: true,
+        boardingPoint: boardingPoint,
+        currentStopId: currentStopId,
+        latitude: currentStop.lat,
+        longitude: currentStop.lng,
+        lastUpdated: new Date().toISOString(),
+        journeyStatus: "IN_TRANSIT",
+        confidence: "HIGH",
+        confirmedByStudent: true,
       });
 
-      await setDoc(doc(db, "arrivalObservations", `obs_vote_${Date.now()}`), {
-        id: `obs_vote_${Date.now()}`,
-        routeId: activeRouteMeta.routeId,
-        stopId: currentStopId,
-        travelTimeFromPrevious: 12,
-        observedTime: timeFormatted,
-        studentId: "std_student_main",
-        timestamp: voteTimestamp,
-        verifiedByStudentVotes: confirmedCount + 1,
-      });
-
-      showToast(`✓ Thank you! Vote for Bus ${activeRouteMeta.busNum} recorded in Firestore.`);
+      showToast(`✓ Vote recorded! Bus ${activeRouteMeta.busNum} confirmed in Firestore.`);
     } catch (e) {
       showToast("✓ Vote saved to crowdsourced history!");
     }
@@ -358,6 +362,8 @@ export function App() {
     setToastMessage(msg);
     setTimeout(() => setToastMessage(null), 3500);
   };
+
+  const currentConfirmedCount = confirmations.length;
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
@@ -376,7 +382,7 @@ export function App() {
         activeTab={activeTab}
       />
 
-      {/* Main Content Area */}
+      {/* Main Tab Content */}
       <main className="flex-1 overflow-y-auto">
         {activeTab === "home" && (
           <HomeTab
@@ -388,24 +394,54 @@ export function App() {
               showToast(`Boarding point set to ${p}. Bus: ${routeMeta.busNum}`);
             }}
             onRequestGps={requestUserGpsLocation}
+            gpsPermissionGranted={gpsPermissionGranted}
+            gpsPermissionError={gpsPermissionError}
             userLat={userLat}
             userLng={userLng}
             isUserOnboard={isUserOnboard}
-            isUserOnRoads={isUserOnRoads}
             userStatusMessage={userStatusMessage}
             activeBusNumber={activeRouteMeta.busNum}
-            activeStudentCount={activeStudentCount}
-            crowdLevel={crowdLevel}
+            activeStudentCount={crowdMetrics.activeCount}
+            crowdLevel={crowdMetrics.crowdLevel}
             onAdjustCrowd={handleAdjustCrowd}
             eta={etaPrediction}
-            alternativeRoute={alternativeOption}
-            confirmedCount={confirmedCount}
+            routeOptions={routeOptions}
+            confirmedCount={currentConfirmedCount}
             hasUserConfirmed={hasUserConfirmed}
             onConfirmBus={handleConfirmBus}
             onNavigateToLive={() => setActiveTab("live")}
             onNavigateToRoutes={() => setActiveTab("routes")}
             allStops={stops}
+            allRoutes={routes}
+            routeStops={routeStops}
             lastUpdatedSecondsAgo={lastUpdatedSecondsAgo}
+            targetCollegeTime={targetCollegeTime}
+            isSimulating={isSimulating}
+            onApplyDemoSimulation={async (stopId, count, routeId, targetTime) => {
+              setIsSimulating(true);
+              if (targetTime) {
+                setTargetCollegeTime(targetTime);
+              }
+              const matchedStop = stops.find((s) => s.id === stopId);
+              if (matchedStop) {
+                setBoardingPoint(matchedStop.name);
+              }
+              const newDemoJourneys = await applyDemoSimulationParams(stopId, count, routeId, stops);
+              setActiveJourneys((prev) => {
+                const nonDemo = prev.filter((j) => !j.isDemo);
+                return [...nonDemo, ...newDemoJourneys];
+              });
+              showToast(`✓ Demo Simulation applied: ${matchedStop?.name || stopId}, ${count} students on Bus ${routeId}${targetTime ? ` (Target: ${targetTime})` : ""}`);
+            }}
+            onResetDemoSimulation={() => {
+              stopDemoSimulation();
+              setIsSimulating(false);
+              showToast("✓ Demo Simulation reset to Real Mode.");
+            }}
+            onCollegeTimeChange={(newTime) => {
+              setTargetCollegeTime(newTime);
+              showToast(`🎓 College Target Timing updated to ${newTime}`);
+            }}
           />
         )}
 
@@ -414,23 +450,29 @@ export function App() {
             currentStopName={currentStop.name}
             currentStopId={currentStopId}
             activeBusNumber={activeRouteMeta.busNum}
-            activeStudentCount={activeStudentCount}
-            crowdLevel={crowdLevel}
+            activeStudentCount={crowdMetrics.activeCount}
+            crowdLevel={crowdMetrics.crowdLevel}
             lastUpdatedSecondsAgo={lastUpdatedSecondsAgo}
-            confirmedCount={confirmedCount}
+            confirmedCount={currentConfirmedCount}
             hasUserConfirmed={hasUserConfirmed}
             onConfirmBus={handleConfirmBus}
             allStops={stops}
             activeRouteStops={
-              selectedRouteObj?.stops
-                ? selectedRouteObj.stops
-                    .map((st) => stops.find((s) => s.id === st.stopId))
+              routeStops.length > 0
+                ? routeStops
+                    .filter((rs) => rs.routeId === activeRouteMeta.routeId)
+                    .map((rs) => stops.find((s) => s.id === rs.stopId))
                     .filter((s): s is Stop => s !== undefined)
                 : stops
             }
             userLat={userLat}
             userLng={userLng}
             isUserOnboard={isUserOnboard}
+            allMasterRoutes={routes}
+            activeJourneys={activeJourneys}
+            isSimulating={isSimulating}
+            onRefreshLiveData={() => showToast("✓ Refreshed live student telemetry!")}
+            onVoteCrowd={(level) => showToast(`🗳️ Crowd vote recorded: ${level}`)}
           />
         )}
 
@@ -438,7 +480,18 @@ export function App() {
           <RoutesTab
             options={routeOptions}
             boardingPoint={boardingPoint}
-            onSelectOption={() => {}}
+            allStops={stops}
+            allMasterRoutes={routes}
+            activeJourneys={activeJourneys}
+            isSimulating={isSimulating}
+            hasUserConfirmed={hasUserConfirmed}
+            isUserOnboard={isUserOnboard}
+            onConfirmBus={handleConfirmBus}
+            onSelectBoardingPoint={(p) => {
+              setBoardingPoint(p);
+              const routeMeta = getRouteForBoarding(p);
+              showToast(`Boarding point set to ${p}. Bus: ${routeMeta.busNum}`);
+            }}
           />
         )}
 
@@ -447,21 +500,26 @@ export function App() {
             isSimulating={isSimulating}
             onToggleSimulation={handleToggleSimulation}
             onRunSeeder={handleRunSeeder}
-            onAdjustCrowd={handleAdjustCrowd}
-            currentCrowdLevel={crowdLevel}
             boardingPoint={boardingPoint}
-            confirmedCount={confirmedCount}
+            confirmedCount={currentConfirmedCount}
+            targetCollegeTime={targetCollegeTime}
+            onSelectTargetTime={(t) => {
+              setTargetCollegeTime(t);
+              showToast(`Target arrival time updated to ${t}`);
+            }}
+            gpsPermissionGranted={gpsPermissionGranted}
+            onRequestGps={requestUserGpsLocation}
           />
         )}
       </main>
 
-      {/* Bottom Navigation with Vote Button beside Live tab */}
+      {/* Bottom Navigation Bar */}
       <BottomNav
         activeTab={activeTab}
         onTabChange={setActiveTab}
         onVoteClick={handleConfirmBus}
         hasUserConfirmed={hasUserConfirmed}
-        isUserOnRoads={isUserOnRoads}
+        isUserOnRoads={true}
       />
     </div>
   );

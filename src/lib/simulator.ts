@@ -1,90 +1,147 @@
-import { doc, setDoc, updateDoc } from "firebase/firestore";
+import { doc, setDoc } from "firebase/firestore";
 import { db } from "./firebase";
 import { MASTER_STOPS } from "./seeder";
-import { CrowdLevel } from "../types";
+import { ActiveJourney, Stop } from "../types";
 
-// Sequence of demo simulation stops
+// Sequence of demo simulation stops along 38Y / Duvvada corridor
 const SIMULATION_STOP_IDS = [
-  "stop_simhachalam",
-  "stop_nad",
-  "stop_gajuwaka",
-  "stop_kurmannapalem",
-  "stop_duvvada",
-  "stop_college",
+  "rtc",
+  "gurudwar",
+  "nad",
+  "airport",
+  "bhpv",
+  "gajuwaka",
+  "kurmannapalem",
+  "duvvada",
 ];
 
 let simulationInterval: any = null;
-let currentStepIndex = 3; // Default at Kurmannapalem
-let currentSimulatedCrowdCount = 27; // Default HIGH crowd count
+let currentStepIndex = 5; // Default at Gajuwaka
+let currentSimulatedCrowdCount = 8; // Default 8 students (LIVE, High Confidence)
 
 export function isSimulationActive(): boolean {
   return simulationInterval !== null;
 }
 
+/**
+ * Instantly applies user demo simulation parameters (stop location, student count, route)
+ * Creates simulated student telemetry marked with isDemo: true and validationStatus: VALIDATED.
+ */
+export async function applyDemoSimulationParams(
+  stopId: string,
+  studentCount: number,
+  routeId: string,
+  stops: Stop[] = []
+): Promise<ActiveJourney[]> {
+  const targetStop =
+    stops.find((s) => s.id === stopId) ||
+    MASTER_STOPS.find((s) => s.id === stopId) ||
+    stops[0] ||
+    MASTER_STOPS[0];
+
+  const simulatedJourneys: ActiveJourney[] = [];
+
+  for (let s = 1; s <= 30; s++) {
+    const journeyId = `demo_std_${s}`;
+    if (s <= studentCount) {
+      const offsetLat = (Math.random() - 0.5) * 0.0012;
+      const offsetLng = (Math.random() - 0.5) * 0.0012;
+      const j: ActiveJourney = {
+        id: journeyId,
+        userId: `demo_user_${s}`,
+        studentId: `demo_user_${s}`,
+        journeyId,
+        routeId: routeId || "38Y",
+        boardingPoint: targetStop.name,
+        currentStopId: targetStop.id,
+        currentSequence: 6,
+        latitude: targetStop.lat + offsetLat,
+        longitude: targetStop.lng + offsetLng,
+        gpsAccuracyMeters: 12,
+        lastUpdated: new Date().toISOString(),
+        lastLocationAt: new Date().toISOString(),
+        journeyStatus: targetStop.id === "duvvada" ? "ARRIVED" : "IN_TRANSIT",
+        confidence: "HIGH",
+        routeConfidence: "HIGH",
+        routeVerificationStatus: "VERIFIED",
+        validationStatus: "VALIDATED",
+        consecutiveValidReadings: 3,
+        confirmedByStudent: true,
+        isDemo: true,
+      };
+      simulatedJourneys.push(j);
+
+      try {
+        await setDoc(doc(db, "activeJourneys", journeyId), j, { merge: true });
+      } catch (err) {
+        console.warn("Firestore setDoc demo journey warning:", err);
+      }
+    } else {
+      try {
+        await setDoc(
+          doc(db, "activeJourneys", journeyId),
+          {
+            id: journeyId,
+            journeyStatus: "ARRIVED",
+            isDemo: true,
+          },
+          { merge: true }
+        );
+      } catch (err) {}
+    }
+  }
+
+  return simulatedJourneys;
+}
+
 export function startDemoSimulation(
   onStopChange?: (stopName: string, stepIndex: number) => void,
-  intervalMs: number = 4000
+  intervalMs: number = 4000,
+  targetRouteId: string = "38Y"
 ) {
   if (simulationInterval) {
     clearInterval(simulationInterval);
   }
 
-  console.log("Starting RouteReach live simulation along Duvvada Corridor...");
+  console.log("Starting RouteReach DEMO MODE student sensor network simulation...");
 
   simulationInterval = setInterval(async () => {
     currentStepIndex = (currentStepIndex + 1) % SIMULATION_STOP_IDS.length;
     const targetStopId = SIMULATION_STOP_IDS[currentStepIndex];
-    const targetStop = MASTER_STOPS.find((s) => s.id === targetStopId);
+    const targetStop = MASTER_STOPS.find((s) => s.id === targetStopId) || MASTER_STOPS[0];
 
     if (!targetStop) return;
 
     try {
-      // 1. Update Bus 38Y position in Firestore
-      await updateDoc(doc(db, "buses", "bus_38y"), {
-        currentStopId: targetStop.id,
-        currentLat: targetStop.lat,
-        currentLng: targetStop.lng,
-      });
-
-      // 2. Update Primary User Active Journey in Firestore
-      await setDoc(
-        doc(db, "activeJourneys", "current_user_journey"),
-        {
-          id: "current_user_journey",
-          userId: "std_student_main",
-          routeId: "route_38y",
-          boardingPoint: "Simhachalam",
-          currentStopId: targetStop.id,
-          latitude: targetStop.lat,
-          longitude: targetStop.lng,
-          lastUpdated: new Date().toISOString(),
-          journeyStatus: targetStop.isDestination ? "ARRIVED" : "IN_TRANSIT",
-          confidence: "HIGH",
-          confirmedByStudent: true,
-        },
-        { merge: true }
-      );
-
-      // 3. Update Cluster of Active Student Journeys according to currentSimulatedCrowdCount
-      for (let s = 1; s <= 30; s++) {
-        const journeyId = `student_sim_${s}`;
+      // Update cluster of simulated student journeys in Firestore activeJourneys
+      for (let s = 1; s <= 10; s++) {
+        const journeyId = `demo_std_${s}`;
         if (s <= currentSimulatedCrowdCount) {
-          const offsetLat = (Math.random() - 0.5) * 0.003;
-          const offsetLng = (Math.random() - 0.5) * 0.003;
+          const offsetLat = (Math.random() - 0.5) * 0.0015;
+          const offsetLng = (Math.random() - 0.5) * 0.0015;
           await setDoc(
             doc(db, "activeJourneys", journeyId),
             {
               id: journeyId,
-              userId: `std_user_${s}`,
-              routeId: "route_38y",
-              boardingPoint: "Simhachalam",
+              userId: `demo_user_${s}`,
+              studentId: `demo_user_${s}`,
+              journeyId,
+              routeId: targetRouteId,
+              boardingPoint: "RTC",
               currentStopId: targetStop.id,
+              currentSequence: currentStepIndex + 1,
               latitude: targetStop.lat + offsetLat,
               longitude: targetStop.lng + offsetLng,
               lastUpdated: new Date().toISOString(),
-              journeyStatus: targetStop.isDestination ? "ARRIVED" : "IN_TRANSIT",
+              lastLocationAt: new Date().toISOString(),
+              journeyStatus: targetStop.id === "duvvada" ? "ARRIVED" : "IN_TRANSIT",
               confidence: "HIGH",
-              confirmedByStudent: s <= 12,
+              routeConfidence: "HIGH",
+              routeVerificationStatus: "VERIFIED",
+              validationStatus: "VALIDATED",
+              consecutiveValidReadings: 3,
+              confirmedByStudent: true,
+              isDemo: true,
             },
             { merge: true }
           );
@@ -94,6 +151,7 @@ export function startDemoSimulation(
             {
               id: journeyId,
               journeyStatus: "ARRIVED",
+              isDemo: true,
             },
             { merge: true }
           );
@@ -104,7 +162,7 @@ export function startDemoSimulation(
         onStopChange(targetStop.name, currentStepIndex);
       }
     } catch (err) {
-      console.error("Simulation update error:", err);
+      console.error("Demo Simulation update error:", err);
     }
   }, intervalMs);
 }
@@ -113,51 +171,5 @@ export function stopDemoSimulation() {
   if (simulationInterval) {
     clearInterval(simulationInterval);
     simulationInterval = null;
-    console.log("Demo simulation stopped.");
-  }
-}
-
-export async function adjustCrowdSimulation(level: CrowdLevel) {
-  if (level === "LOW") currentSimulatedCrowdCount = 3;
-  if (level === "MEDIUM") currentSimulatedCrowdCount = 10;
-  if (level === "HIGH") currentSimulatedCrowdCount = 27;
-
-  const currentStopId = SIMULATION_STOP_IDS[currentStepIndex];
-  const targetStop = MASTER_STOPS.find((s) => s.id === currentStopId) || MASTER_STOPS[5];
-
-  console.log(`Setting active crowd count to ${currentSimulatedCrowdCount} (${level})`);
-
-  for (let s = 1; s <= 30; s++) {
-    const journeyId = `student_sim_${s}`;
-    if (s <= currentSimulatedCrowdCount) {
-      const offsetLat = (Math.random() - 0.5) * 0.003;
-      const offsetLng = (Math.random() - 0.5) * 0.003;
-      await setDoc(
-        doc(db, "activeJourneys", journeyId),
-        {
-          id: journeyId,
-          userId: `std_user_${s}`,
-          routeId: "route_38y",
-          boardingPoint: "Simhachalam",
-          currentStopId: targetStop.id,
-          latitude: targetStop.lat + offsetLat,
-          longitude: targetStop.lng + offsetLng,
-          lastUpdated: new Date().toISOString(),
-          journeyStatus: "IN_TRANSIT",
-          confidence: "HIGH",
-          confirmedByStudent: s <= 8,
-        },
-        { merge: true }
-      );
-    } else {
-      await setDoc(
-        doc(db, "activeJourneys", journeyId),
-        {
-          id: journeyId,
-          journeyStatus: "ARRIVED",
-        },
-        { merge: true }
-      );
-    }
   }
 }
